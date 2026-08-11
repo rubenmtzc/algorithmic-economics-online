@@ -1,11 +1,11 @@
 ---
 title: "Computational Economics, Causal ML and AI"
-subtitle: "A research-level learning programme at the economics–computer science interface"
+subtitle: "Learning programme at the economics–computer science interface"
 page-layout: full
 ---
 
 ::: {.hero-title}
-From econometrics to causal ML, reinforcement learning, mechanism design and foundation models.
+Econometrics, causal ML, reinforcement learning, mechanism design and foundation models.
 :::
 
 ::: {.hero-subtitle}
