@@ -4,9 +4,9 @@ project:
 
 website:
   title: "Computational Economics, Causal ML and AI"
-  site-url: "https://YOUR-USERNAME.github.io/computational-economics-roadmap/"
+  site-url: "https://rubenmtzc.github.io/algorithmic-economics-online/"
   description: "A research-level learning programme at the economics–computer science interface."
-  repo-url: "https://github.com/YOUR-USERNAME/computational-economics-roadmap"
+  repo-url: "https://github.com/rubenmtzc/algorithmic-economics-online"
   repo-actions: [edit, issue]
   page-navigation: true
   search: true
@@ -22,7 +22,7 @@ website:
         text: References
     right:
       - icon: github
-        href: "https://github.com/YOUR-USERNAME/computational-economics-roadmap"
+        href: "https://github.com/rubenmtzc/algorithmic-economics-online"
   sidebar:
     style: docked
     contents:
