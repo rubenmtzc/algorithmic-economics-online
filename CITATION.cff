@@ -1,10 +1,13 @@
 cff-version: 1.2.0
-title: "Computational Economics, Causal ML and AI"
+title: "Algorithmic Economics Online"
 message: "If you use this learning programme, please cite it using the metadata in this file."
 type: software
+
 authors:
-  - family-names: "YOUR-SURNAME"
-    given-names: "YOUR-GIVEN-NAME"
+  - family-names: "Martínez Cárdenas"
+    given-names: "Rubén"
+
 year: 2026
-repository-code: "https://github.com/YOUR-USERNAME/computational-economics-roadmap"
-url: "https://YOUR-USERNAME.github.io/computational-economics-roadmap/"
+
+repository-code: "https://github.com/rubenmtzc/algorithmic-economics-online"
+url: "https://rubenmtzc.github.io/algorithmic-economics-online/"

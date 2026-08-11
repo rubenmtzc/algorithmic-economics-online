@@ -16,15 +16,15 @@ Quarto will render the site and open a local preview.
 
 ## Publish with GitHub Pages
 
-1. Replace every `YOUR-USERNAME` in `_quarto.yml` with your GitHub username.
-2. Create a GitHub repository named `computational-economics-roadmap`.
+1. Replace every `rubenmtzc` in `_quarto.yml` with your GitHub username.
+2. Create a GitHub repository named `algorithmic-economics-online`.
 3. Push this folder to its `main` branch.
 4. On GitHub go to **Settings → Pages → Build and deployment → Source → GitHub Actions**.
 5. Push any subsequent change to `main`; `.github/workflows/pages.yml` will render and deploy the site.
 
 Your project-site URL will normally be:
 
-`https://YOUR-USERNAME.github.io/computational-economics-roadmap/`
+`https://rubenmtzc.github.io/algorithmic-economics-online/`
 
 ## Editing workflow
 
