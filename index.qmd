@@ -1,11 +1,12 @@
 ---
-title: "Stage 1 — Research-level Python and Computing"
+title: "Stage 1 — Python and Computing for Research"
 subtitle: "From scripts to reproducible research software"
 ---
 
 ## Purpose
 
 This stage develops the computing foundation needed for the rest of the programme. The goal is not merely to *use Python*, but to write research code that is readable, tested, reproducible and suitable for extension into machine-learning research.
+It is a 10-week programme covering Python, NumPy, pandas, Polars, SQL, scikit-learn, PyTorch, Linux/shell, Git, testing, packaging and reproducible research software. I have used current online resources freely available, including Harvard CS50P, MIT's 2026 Missing Semester, Harvard CS50 SQL, and the current NumPy/pandas/Polars/PyTorch/scikit-learn documentation. CS50P can be completed using its browser-based development environment; MIT's 2026 Missing Semester includes recorded lectures on shell, Git, debugging, packaging and code quality. The current technical documentation also reflects recent versions of NumPy, pandas, scikit-learn and PyTorch.
 
 **Suggested duration:** 10 weeks  
 **Workload:** 10–12 hours per week
