@@ -1,0 +1,23 @@
+---
+title: "9. Foundation Models for Structured and Relational Data"
+---
+
+::: {.module-meta}
+**Duration:** 12 weeks  
+**Outcome:** Work with GNNs, relational data and tabular/relational foundation models.
+:::
+
+## Core topics
+
+Graphs; message passing; GCN; GraphSAGE; GAT; heterogeneous graphs; relational databases as graphs; relational deep learning; tabular foundation models.
+
+## Essential resources
+
+- Stanford **CS224W: Machine Learning with Graphs** — <https://web.stanford.edu/class/cs224w/>
+- Hamilton, W. L. (2020). *Graph Representation Learning*. <https://www.cs.mcgill.ca/~wlh/grl_book/>
+- RelBench — <https://relbench.stanford.edu/>
+- Hollmann, N., et al. (2025). Accurate predictions on small data with a tabular foundation model. *Nature*.
+
+## Milestone
+
+Compare hand-engineered boosted trees, a GNN and a tabular/relational foundation-model approach on a relational prediction problem.

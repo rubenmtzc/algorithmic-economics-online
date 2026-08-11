@@ -1,0 +1,25 @@
+:root {
+  --bs-font-sans-serif: Inter, Aptos, "Segoe UI", Arial, sans-serif;
+}
+body {
+  font-family: var(--bs-font-sans-serif);
+}
+code, pre, kbd, samp {
+  font-family: "Cascadia Code", "SFMono-Regular", Consolas, monospace;
+}
+.hero-title {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 700;
+  line-height: 1.05;
+  margin-bottom: 0.5rem;
+}
+.hero-subtitle {
+  font-size: 1.2rem;
+  max-width: 55rem;
+  margin-bottom: 1.5rem;
+}
+.module-meta {
+  padding: 0.8rem 1rem;
+  border-left: 4px solid #777;
+  margin: 1rem 0 1.5rem;
+}

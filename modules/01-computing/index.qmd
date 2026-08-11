@@ -1,0 +1,27 @@
+---
+title: "1. Research-level Python and Computing"
+---
+
+::: {.module-meta}
+**Duration:** 10 weeks  
+**Outcome:** Build a reproducible research-software repository.
+:::
+
+## Core topics
+
+Python; NumPy; pandas; Polars; scikit-learn workflow; SQL; Linux shell; Git; testing; packaging; reproducible environments.
+
+## Essential courses
+
+- Harvard **CS50P: Introduction to Programming with Python** — <https://cs50.harvard.edu/python/>
+- MIT **The Missing Semester of Your CS Education** — <https://missing.csail.mit.edu/>
+- MIT **6.100L: Introduction to CS and Programming Using Python** — <https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/>
+
+## References
+
+- Python Software Foundation. *The Python Tutorial*. <https://docs.python.org/3/tutorial/>
+- Chacon, S., & Straub, B. (2014). *Pro Git* (2nd ed.). Apress. <https://git-scm.com/book/en/v2>
+
+## Milestone
+
+Rebuild an empirical project as a tested, documented repository using Git, Python and SQL.

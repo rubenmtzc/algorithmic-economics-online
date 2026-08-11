@@ -1,0 +1,84 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Computational Economics, Causal ML and AI"
+  site-url: "https://YOUR-USERNAME.github.io/computational-economics-roadmap/"
+  description: "A research-level learning programme at the economics–computer science interface."
+  repo-url: "https://github.com/YOUR-USERNAME/computational-economics-roadmap"
+  repo-actions: [edit, issue]
+  page-navigation: true
+  search: true
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: roadmap.qmd
+        text: Roadmap
+      - href: projects/index.qmd
+        text: Projects
+      - href: references/index.qmd
+        text: References
+    right:
+      - icon: github
+        href: "https://github.com/YOUR-USERNAME/computational-economics-roadmap"
+  sidebar:
+    style: docked
+    contents:
+      - section: "Start here"
+        contents:
+          - index.qmd
+          - roadmap.qmd
+          - getting-started.qmd
+      - section: "1. Research computing"
+        contents:
+          - modules/01-computing/index.qmd
+      - section: "2. Statistical learning"
+        contents:
+          - modules/02-statistical-learning/index.qmd
+      - section: "3. Modern causal ML"
+        contents:
+          - modules/03-causal-ml/index.qmd
+      - section: "4. Deep learning"
+        contents:
+          - modules/04-deep-learning/index.qmd
+      - section: "5. Optimisation & algorithms"
+        contents:
+          - modules/05-optimisation-algorithms/index.qmd
+      - section: "6. Bandits & reinforcement learning"
+        contents:
+          - modules/06-bandits-rl/index.qmd
+      - section: "7. Algorithmic game theory"
+        contents:
+          - modules/07-algorithmic-game-theory/index.qmd
+      - section: "8. Multi-agent learning"
+        contents:
+          - modules/08-multi-agent-learning/index.qmd
+      - section: "9. Structured & relational FMs"
+        contents:
+          - modules/09-foundation-models/index.qmd
+      - section: "10. Research specialisation"
+        contents:
+          - modules/10-specialisation/index.qmd
+          - specialisations/index.qmd
+      - section: "Research work"
+        contents:
+          - projects/index.qmd
+          - references/index.qmd
+
+bibliography: references/references.bib
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    code-copy: true
+    code-overflow: wrap
+    link-external-newwindow: true
+
+execute:
+  freeze: auto
+
+lang: en-GB

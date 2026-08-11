@@ -1,0 +1,23 @@
+---
+title: "6. Bandits and Reinforcement Learning"
+---
+
+::: {.module-meta}
+**Duration:** 14 weeks  
+**Outcome:** Solve sequential decision problems from bandits through deep RL.
+:::
+
+## Core topics
+
+Regret; UCB; Thompson sampling; contextual bandits; MDPs; dynamic programming; Q-learning; policy gradients; actor–critic; PPO; offline RL.
+
+## Essential resources
+
+- Lattimore, T., & Szepesvári, C. (2020). *Bandit Algorithms*. <https://tor-lattimore.com/downloads/book/book.pdf>
+- Sutton, R. S., & Barto, A. G. (2018). *Reinforcement Learning: An Introduction* (2nd ed.). MIT Press.
+- Stanford **CS234: Reinforcement Learning** — <https://web.stanford.edu/class/cs234/>
+- Berkeley **CS285: Deep Reinforcement Learning** — <https://rail.eecs.berkeley.edu/deeprlcourse/>
+
+## Milestone
+
+Build a dynamic-pricing environment and compare a static benchmark, contextual bandit and RL policies.

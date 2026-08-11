@@ -1,0 +1,22 @@
+---
+title: "7. Algorithmic Game Theory and Computational Mechanism Design"
+---
+
+::: {.module-meta}
+**Duration:** 14 weeks  
+**Outcome:** Analyse and implement strategic mechanisms computationally.
+:::
+
+## Core topics
+
+Computational equilibria; price of anarchy; routing; matching; auctions; VCG; Myerson; combinatorial auctions; approximation; automated and differentiable mechanism design.
+
+## Essential resources
+
+- Roughgarden, T. (2016). *Twenty Lectures on Algorithmic Game Theory*. Cambridge University Press. <https://timroughgarden.org/books.html>
+- Nisan, N., Roughgarden, T., Tardos, É., & Vazirani, V. V. (Eds.). (2007). *Algorithmic Game Theory*. Cambridge University Press.
+- Stanford **CS364A: Algorithmic Game Theory** — <https://timroughgarden.org/f13/f13.html>
+
+## Milestone
+
+Implement benchmark auctions and matching mechanisms; then build a small differentiable/neural mechanism and test incentive violations.

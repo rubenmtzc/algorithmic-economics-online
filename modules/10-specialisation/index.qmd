@@ -1,0 +1,26 @@
+---
+title: "10. Research Specialisation"
+---
+
+::: {.module-meta}
+**Duration:** 6–12 months  
+**Outcome:** Move from replication to a working-paper-level contribution.
+:::
+
+Choose one primary and one secondary research stream:
+
+1. Causal foundation models
+2. Learning mechanisms
+3. Economic/AI agents
+4. Economically structured foundation models
+5. Relational economic foundation models
+
+The research workflow is:
+
+$$
+\text{paper} \rightarrow \text{reproduce} \rightarrow \text{stress test}
+\rightarrow \text{find failure} \rightarrow \text{economic explanation}
+\rightarrow \text{new method}.
+$$
+
+[See the specialisation map →](../../specialisations/index.qmd)

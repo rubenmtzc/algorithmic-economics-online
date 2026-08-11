@@ -1,0 +1,22 @@
+---
+title: "8. Multi-Agent Reinforcement Learning and Learning in Games"
+---
+
+::: {.module-meta}
+**Duration:** 10 weeks  
+**Outcome:** Analyse strategic learning when multiple agents adapt simultaneously.
+:::
+
+## Core topics
+
+Fictitious play; replicator dynamics; multiplicative weights; no-regret learning; correlated equilibrium; stochastic games; MARL; self-play; opponent modelling.
+
+## Essential resources
+
+- Fudenberg, D., & Levine, D. K. (1998). *The Theory of Learning in Games*. MIT Press.
+- MIT **6.S890: Topics in Multiagent Learning** — <https://www.mit.edu/~gfarina/6S890/>
+- Zhang, K., Yang, Z., & Başar, T. (2019). Multi-agent reinforcement learning: A selective overview of theories and algorithms. <https://arxiv.org/abs/1911.10635>
+
+## Milestone
+
+Create an artificial market populated by adaptive agents and compare learned outcomes with economic equilibrium benchmarks.

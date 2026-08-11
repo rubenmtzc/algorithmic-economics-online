@@ -1,0 +1,23 @@
+---
+title: "4. Deep Learning Fundamentals"
+---
+
+::: {.module-meta}
+**Duration:** 12 weeks  
+**Outcome:** Implement MLPs, embeddings, attention and transformer blocks in PyTorch.
+:::
+
+## Core topics
+
+PyTorch; automatic differentiation; MLPs; optimisation; embeddings; attention; transformers; training and evaluation.
+
+## Essential resources
+
+- MIT **6.S191: Introduction to Deep Learning** — <https://introtodeeplearning.com/>
+- Stanford **CS336: Language Modeling from Scratch** — <https://cs336.stanford.edu/>
+- Zhang, A., Lipton, Z. C., Li, M., & Smola, A. J. *Dive into Deep Learning*. <https://d2l.ai/>
+- Vaswani, A., et al. (2017). Attention is all you need. *NeurIPS 30*.
+
+## Milestone
+
+Implement a small transformer without using a high-level transformer module and train it on a modest dataset.

@@ -1,0 +1,63 @@
+---
+title: "Module title"
+subtitle: "One-sentence purpose"
+---
+
+::: {.module-meta}
+**Duration:** X weeks  
+**Prerequisites:** ...  
+**Outcome:** ...
+:::
+
+## Why this matters
+
+Explain the research or application problem this module prepares you to solve.
+
+## Learning objectives
+
+By the end, you should be able to:
+
+- ...
+- ...
+- ...
+
+## Core concepts
+
+### Concept 1
+
+Key definitions, mathematics and intuition.
+
+## Essential reading
+
+- Author, A. A. (Year). *Title*. Publisher/Journal. [Link](https://example.com)
+
+## Lectures / courses
+
+- **Course — Institution.** [Course page](https://example.com)
+
+## Implementation tasks
+
+1. Implement ...
+2. Validate against ...
+3. Write tests for ...
+
+## Milestone project
+
+**Question:** ...
+
+**Deliverables:** code, README, results, short technical note.
+
+## Research extension
+
+- What assumption is restrictive?
+- What happens under distribution shift?
+- Can economic structure improve the method?
+
+## Completion test
+
+You are ready to continue when you can:
+
+- derive/explain ...
+- implement ...
+- reproduce ...
+- identify one plausible research extension.

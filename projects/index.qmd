@@ -1,0 +1,34 @@
+---
+title: "Projects and Replications"
+---
+
+Use this area to record substantive outputs rather than course completion.
+
+## Project template
+
+For each project include:
+
+- research question;
+- economic/statistical assumptions;
+- dataset and provenance;
+- method;
+- benchmark;
+- implementation notes;
+- robustness checks;
+- results;
+- what failed;
+- possible research extension;
+- link to code/notebook.
+
+## Suggested progression
+
+1. Reproducible empirical pipeline
+2. Statistical-learning benchmark
+3. Causal-ML replication
+4. Transformer from scratch
+5. Algorithmic allocation problem
+6. Dynamic-pricing RL environment
+7. Learned mechanism
+8. Multi-agent artificial market
+9. Relational foundation-model benchmark
+10. Frontier research extension

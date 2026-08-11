@@ -1,0 +1,23 @@
+---
+title: "5. Optimisation, Algorithms and Complexity"
+---
+
+::: {.module-meta}
+**Duration:** 12 weeks  
+**Outcome:** Translate mathematical problems into algorithms and reason about tractability.
+:::
+
+## Core topics
+
+Convexity; gradient methods; duality; KKT; linear/quadratic programming; data structures; graph algorithms; dynamic programming; network flow; P/NP/NP-hardness; approximation.
+
+## Essential resources
+
+- Boyd, S., & Vandenberghe, L. (2004). *Convex Optimization*. <https://web.stanford.edu/~boyd/cvxbook/>
+- MIT **6.006: Introduction to Algorithms** — <https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/>
+- MIT **6.046J: Design and Analysis of Algorithms** — <https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2015/>
+- Cormen, T. H., et al. (2022). *Introduction to Algorithms* (4th ed.). MIT Press.
+
+## Milestone
+
+Implement matching, shortest-path, max-flow and optimisation algorithms, then solve a constrained economic allocation problem.

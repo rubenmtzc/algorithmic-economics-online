@@ -1,0 +1,22 @@
+---
+title: "2. Statistical Learning"
+---
+
+::: {.module-meta}
+**Duration:** 10 weeks  
+**Outcome:** Understand and implement the main classical ML methods and their statistical logic.
+:::
+
+## Core topics
+
+Bias–variance; empirical risk; regularisation; ridge/LASSO/elastic net; trees; bagging; random forests; boosting; cross-validation; model selection; high-dimensional statistics.
+
+## Essential resources
+
+- James, G., Witten, D., Hastie, T., Tibshirani, R., & Taylor, J. (2023). *An Introduction to Statistical Learning: With Applications in Python*. Springer. <https://www.statlearning.com/>
+- Stanford **CS229: Machine Learning** — <https://cs229.stanford.edu/>
+- Wainwright, M. J. (2019). *High-Dimensional Statistics*. Cambridge University Press.
+
+## Milestone
+
+Compare OLS, LASSO, random forests and gradient boosting on an economic prediction problem using a strict out-of-sample design.

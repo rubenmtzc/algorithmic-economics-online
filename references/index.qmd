@@ -1,0 +1,16 @@
+---
+title: "Reference Library"
+---
+
+The master BibTeX database is stored in `references/references.bib`.
+
+Add each paper/book once and cite it throughout the site using Quarto citation syntax, e.g. `[@chernozhukov2018dml]`.
+
+## Core references
+
+- @james2023islp
+- @chernozhukov2018dml
+- @boyd2004convex
+- @sutton2018rl
+- @roughgarden2016twenty
+- @hamilton2020graph

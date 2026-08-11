@@ -1,0 +1,34 @@
+---
+title: "Learning Roadmap"
+---
+
+The default pace is approximately **10–12 hours per week**. The first nine stages form a roughly two-year core; Stage 10 is a research specialisation phase.
+
+| Stage | Subject | Indicative duration | Main output |
+|---|---|---:|---|
+| 1 | Research computing | 10 weeks | Reproducible research repository |
+| 2 | Statistical learning | 10 weeks | Prediction benchmark project |
+| 3 | Modern causal ML | 12 weeks | Causal ML replication/project |
+| 4 | Deep learning | 12 weeks | Transformer components from scratch |
+| 5 | Optimisation & algorithms | 12 weeks | Algorithmic allocation project |
+| 6 | Bandits & RL | 14 weeks | Dynamic pricing/RL project |
+| 7 | Algorithmic game theory | 14 weeks | Computational mechanism project |
+| 8 | Multi-agent learning | 10 weeks | Artificial-market experiment |
+| 9 | Structured/relational FMs | 12 weeks | Relational ML benchmark |
+| 10 | Research specialisation | 6–12 months | Working-paper-level project |
+
+## Parallel mathematics spine
+
+Run alongside the main sequence:
+
+- **Months 1–6:** linear algebra, probability, multivariate calculus, likelihood and asymptotics.
+- **Months 6–12:** convexity, duality, KKT conditions, concentration and high-dimensional statistics.
+- **Months 12–24:** Markov processes, dynamic programming, regret analysis, fixed points and complexity.
+
+## Research-output ladder
+
+1. Reproducible repositories
+2. Replication studies
+3. Algorithms implemented from papers
+4. Frontier-paper reproductions
+5. Research extensions

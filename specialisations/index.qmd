@@ -1,0 +1,23 @@
+---
+title: "Research Specialisations"
+---
+
+## A. Causal foundation models
+
+Combine causal identification, structural priors and foundation-model architectures.
+
+## B. Learning mechanisms
+
+Study mechanisms whose allocation/payment rules are learned while respecting incentive, feasibility and welfare constraints.
+
+## C. Economic and AI agents
+
+Study artificial agents in auctions, bargaining, markets, public-goods problems and platforms.
+
+## D. Economically structured foundation models
+
+Embed restrictions such as monotonicity, adding-up, revealed preference, equilibrium or incentive compatibility into learned architectures.
+
+## E. Relational economic foundation models
+
+Treat economic relationships—choice, trade, matching, platform membership—as structured edges rather than generic database links.

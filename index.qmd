@@ -1,0 +1,50 @@
+---
+title: "Computational Economics, Causal ML and AI"
+subtitle: "A research-level learning programme at the economics–computer science interface"
+page-layout: full
+---
+
+::: {.hero-title}
+From econometrics to causal ML, reinforcement learning, mechanism design and foundation models.
+:::
+
+::: {.hero-subtitle}
+This site is a structured programme for developing research-level competence in modern data science and computer science while retaining economics as the organising discipline.
+:::
+
+## What the programme is designed to achieve
+
+By the end of the core programme, the target workflow is:
+
+$$
+\text{read a frontier paper}
+\rightarrow
+\text{understand the mathematics}
+\rightarrow
+\text{reproduce it}
+\rightarrow
+\text{modify the method}
+\rightarrow
+\text{design a research contribution}.
+$$
+
+## Core sequence
+
+1. Research-level Python and computing
+2. Statistical learning
+3. Modern causal ML
+4. Deep learning fundamentals
+5. Optimisation, algorithms and complexity
+6. Bandits and reinforcement learning
+7. Algorithmic game theory and computational mechanism design
+8. Multi-agent reinforcement learning and learning in games
+9. Foundation models for structured and relational data
+10. Research specialisation
+
+[View the full roadmap →](roadmap.qmd)
+
+## Working principle
+
+Each module follows the same progression:
+
+**Learn → Implement → Replicate → Extend → Research**

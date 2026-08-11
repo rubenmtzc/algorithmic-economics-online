@@ -1,0 +1,17 @@
+---
+title: "How to Use This Programme"
+---
+
+For each module:
+
+1. Complete the **core reading/lecture**.
+2. Reproduce the key method **from scratch where feasible**.
+3. Complete the **implementation task**.
+4. Keep code, notes and results under version control.
+5. Do not mark a module complete until you can explain the method, implement it and identify its assumptions.
+
+A useful weekly allocation is approximately:
+
+$$
+3h\;\text{lectures} + 3h\;\text{reading/maths} + 4h\;\text{implementation} + 2h\;\text{replication}.
+$$
