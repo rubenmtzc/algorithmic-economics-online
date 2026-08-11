@@ -1,5 +1,5 @@
 ---
-title: "1. Research-level Python and Computing"
+title: "1. Python and Computing for Research"
 ---
 
 ::: {.module-meta}
@@ -11,7 +11,7 @@ title: "1. Research-level Python and Computing"
 
 Python; NumPy; pandas; Polars; scikit-learn workflow; SQL; Linux shell; Git; testing; packaging; reproducible environments.
 
-## Essential courses
+## Online courses
 
 - Harvard **CS50P: Introduction to Programming with Python** — <https://cs50.harvard.edu/python/>
 - MIT **The Missing Semester of Your CS Education** — <https://missing.csail.mit.edu/>
