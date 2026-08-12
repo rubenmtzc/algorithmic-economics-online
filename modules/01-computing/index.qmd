@@ -26,6 +26,10 @@ Python; NumPy; pandas; Polars; scikit-learn workflow; SQL; Linux shell; Git; tes
 
 Rebuild an empirical project as a tested, documented repository using Git, Python and SQL.
 
+## Recommended Bridge
+
 **Next stage**
 
-Recommended bridge: Before Stage 2, complete the Machine Learning Specialization by Andrew Ng or demonstrate equivalent knowledge of supervised learning, regularisation, tree methods, model evaluation and basic unsupervised learning.
+## Recommended bridge
+
+Before Stage 2, complete the [Machine Learning Foundations bridge module](../01b-ml-foundations/index.qmd), or demonstrate equivalent introductory machine-learning knowledge.
