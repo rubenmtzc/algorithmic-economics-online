@@ -1,0 +1,10 @@
+---
+title: "Bridge — Machine Learning Foundations"
+subtitle: "Applied preparation for statistical learning"
+---
+
+This is a recommended course that can work as a good bridge between Stage 1 and Stage 2. The current specialisation is a three-course, beginner-level programme from Stanford Online and DeepLearning.AI, estimated at roughly two months at 10 hours per week. It covers linear/logistic regression, NumPy and scikit-learn, neural networks, trees, random forests, boosted trees, clustering, anomaly detection, recommender systems and an introduction to reinforcement learning.
+Andrew Ng's course is particularly good for developing intuition about ML algorithms and the practical ML workflow before moving into the more mathematical/statistical treatment in ISLP and CS229.
+The first course is particularly relevant after Stage 1 because it uses Python, NumPy and scikit-learn for regression and classification. The second introduces neural networks and covers decision trees, random forests and boosted trees, as well as model-evaluation and ML-development practices.
+There is one mismatch with our roadmap: its neural-network exercises use TensorFlow, whereas I want our main deep-learning framework to be PyTorch. The course currently explicitly uses TensorFlow for neural-network training. That is not a reason to avoid the course—you can learn the concepts there and later implement them properly in PyTorch.
+
