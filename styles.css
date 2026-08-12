@@ -23,3 +23,92 @@ code, pre, kbd, samp {
   border-left: 4px solid #777;
   margin: 1rem 0 1.5rem;
 }
+
+/* =========================================================
+   Homepage programme cards
+   ========================================================= */
+
+.programme-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  margin: 1.5rem 0 3rem 0;
+}
+
+.programme-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 2rem;
+  border: 1px solid rgba(127, 127, 127, 0.25);
+  border-radius: 1rem;
+  box-shadow: 0 0.4rem 1.4rem rgba(0, 0, 0, 0.08);
+}
+
+.programme-card.part-one {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(0, 170, 145, 0.16),
+      rgba(0, 170, 145, 0.05)
+    );
+}
+
+.programme-card.part-two {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(70, 120, 220, 0.16),
+      rgba(70, 120, 220, 0.05)
+    );
+}
+
+.programme-kicker {
+  margin-bottom: 0.7rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+.programme-card h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.15;
+}
+
+.programme-question {
+  margin: 1.25rem 0 1.5rem 0;
+  padding: 1rem 1.1rem;
+  border-left: 4px solid currentColor;
+  background: rgba(127, 127, 127, 0.08);
+  border-radius: 0.35rem;
+}
+
+.programme-button {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 0.65rem 1rem;
+  border: 1px solid currentColor;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.programme-button:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 850px) {
+  .programme-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .programme-card {
+    padding: 1.5rem;
+  }
+}
