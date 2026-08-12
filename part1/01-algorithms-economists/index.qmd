@@ -61,7 +61,7 @@ After completing this module, you should be able to:
 5. **Compare data structures** and explain why representation affects computational performance.
 6. **Recognise and apply** divide-and-conquer, greedy, dynamic-programming, and basic randomised approaches.
 7. **Use standard graph algorithms** as computational building blocks, while leaving the deeper study of networks to Module 2.
-8. **Distinguish tractable from computationally difficult problems** and explain the economic relevance of \(P\), \(NP\), NP-hardness, approximation, and heuristics.
+8. **Distinguish tractable from computationally difficult problems** and explain the economic relevance of $P$, $NP$, NP-hardness, approximation, and heuristics.
 9. **Benchmark algorithms empirically** and relate observed scaling to theoretical complexity.
 10. **Communicate computational trade-offs** to collaborators from economics and computer science.
 
@@ -100,7 +100,7 @@ By the end of the module, expressions such as the following should feel natural 
 - running time and memory;
 - worst-case and average-case reasoning;
 - asymptotic growth;
-- \(O\), \(\Omega\), and \(\Theta\).
+- $O$, $\Omega$, and $\Theta$.
 
 ### Core resources
 
