@@ -57,7 +57,7 @@ After completing this module, you should be able to:
 1. **Specify** a computational problem in terms of inputs, outputs, assumptions, and constraints.
 2. **Read and write pseudocode** and translate between pseudocode and a simple Python implementation.
 3. **Explain correctness** using direct arguments, invariants, induction, or counterexamples at an introductory level.
-4. **Analyse computational cost** using asymptotic notation, including \(O(\cdot)\), \(\Omega(\cdot)\), and \(\Theta(\cdot)\).
+4. **Analyse computational cost** using asymptotic notation, including $O(\cdot)$, $\Omega(\cdot)$, and $\Theta(\cdot)$.
 5. **Compare data structures** and explain why representation affects computational performance.
 6. **Recognise and apply** divide-and-conquer, greedy, dynamic-programming, and basic randomised approaches.
 7. **Use standard graph algorithms** as computational building blocks, while leaving the deeper study of networks to Module 2.
@@ -204,7 +204,7 @@ Companies House publishes a free monthly snapshot of basic data for live UK comp
 
 ### Task
 
-Take a manageable sample, for example \(10^5\), \(5\times10^5\), and \(10^6\) records where your computer permits.
+Take a manageable sample, for example $10^5$, $5\times10^5$, and $10^6$ records where your computer permits.
 
 Compare:
 
@@ -225,9 +225,9 @@ Identify the approximate break-even number of queries at which building an index
 
 The lab should end with a short note explaining the computational analogue of:
 
-\[
+$$
 \text{fixed cost} + q\times\text{marginal query cost}.
-\]
+$$
 
 ## Unit 3: Divide and conquer and randomisation
 
@@ -316,7 +316,7 @@ Use Lectures 15 to 18 from the Spring 2020 course for dynamic programming.
 
 Consider a firm choosing projects under a fixed budget.
 
-Each project \(i\) has cost \(c_i\) and value \(v_i\).
+Each project $i$ has cost $c_i$ and value $v_i$.
 
 1. Propose a greedy rule.
 2. Construct a counterexample in which your greedy rule fails.
