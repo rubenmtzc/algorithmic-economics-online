@@ -9,25 +9,33 @@ Part I develops the substantive intellectual intersection between economics and 
 
 The first two modules build computational literacy for economists. The remainder develops the economic and computational analysis of strategic interaction, information, mechanisms, markets, networks, collective choice, learning, platforms, and digital institutions.
 
+::: {.section-banner .section-banner-part1}
 ## A. Computational foundations
+:::
 
 1. [Algorithms for Economists](01-algorithms-economists/index.qmd)
 2. [Graphs, Networks and Computational Structures](02-graphs-networks/index.qmd)
 
+::: {.section-banner .section-banner-part1}
 ## B. Strategic and economic foundations
+:::
 
 3. [The Economics–Computer Science Interface](03-econ-cs-interface/index.qmd)
 4. [Strategic Interaction and Multi-Agent Systems](04-strategic-interaction/index.qmd)
 5. [Information Economics in Digital Environments](05-information-economics/index.qmd)
 
+::: {.section-banner .section-banner-part1}
 ## C. Designing markets and institutions
+:::
 
 6. [Mechanism Design](06-mechanism-design/index.qmd)
 7. [Auctions and Market Design](07-auctions-market-design/index.qmd)
 8. [Matching Markets](08-matching-markets/index.qmd)
 9. [Computational Social Choice](09-computational-social-choice/index.qmd)
 
+::: {.section-banner .section-banner-part1}
 ## D. Algorithmic economic systems
+:::
 
 10. [Economic and Social Networks](10-economic-social-networks/index.qmd)
 11. [Optimisation and Resource Allocation](11-optimisation-resource-allocation/index.qmd)

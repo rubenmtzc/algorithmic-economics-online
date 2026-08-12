@@ -9,24 +9,32 @@ Part II develops the computational, statistical, and artificial-intelligence too
 
 It progresses from reproducible research computing through statistical and causal learning, deep learning, optimisation, reinforcement learning, multi-agent learning, and foundation models.
 
+::: {.section-banner .section-banner-part2}
 ## A. Research computing and machine learning
+:::
 
 1. [Research-Level Python and Computing](01-research-computing/index.qmd)
 2. [Machine Learning Foundations](02-ml-foundations/index.qmd)
 3. [Statistical Learning](03-statistical-learning/index.qmd)
 
+::: {.section-banner .section-banner-part2}
 ## B. Causal and deep learning
+:::
 
 4. [Modern Causal Machine Learning](04-causal-ml/index.qmd)
 5. [Deep Learning](05-deep-learning/index.qmd)
 
+::: {.section-banner .section-banner-part2}
 ## C. Algorithms and sequential learning
+:::
 
 6. [Optimisation and Algorithms](06-optimisation-algorithms/index.qmd)
 7. [Bandits and Reinforcement Learning](07-bandits-rl/index.qmd)
 8. [Multi-Agent Learning and Reinforcement Learning](08-multi-agent-learning/index.qmd)
 
+::: {.section-banner .section-banner-part2}
 ## D. Foundation models and research
+:::
 
 9. [Structured and Relational Foundation Models](09-structured-foundation-models/index.qmd)
 10. [Research Specialisations](10-research-specialisations/index.qmd)
