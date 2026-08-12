@@ -1,75 +1,743 @@
 ---
-title: "Module 1 — Algorithms for Economists"
+title: "Module 1: Algorithms for Economists"
+subtitle: "Algorithmic thinking, complexity, data structures, and computational problem solving"
 sidebar: part1
 toc: true
 ---
 
-Algorithmic thinking, data structures, complexity, algorithmic paradigms, graph algorithms, and computational tractability for economists.
+## Why this module matters
 
-::: {.callout-note}
-## Status
+Economists routinely formulate problems in terms of preferences, constraints, incentives, equilibrium, welfare, and optimisation. Computer scientists often ask a complementary set of questions:
 
-This page is an initial programme placeholder. Datasets, replications, papers, cases, exercises, and detailed learning resources will be added in the next phase.
+- What is the input?
+- What output is required?
+- What procedure produces that output?
+- Is the procedure correct?
+- How much time and memory does it require?
+- How does its performance scale as the problem becomes larger?
+- Is an exact solution computationally feasible?
+- If not, what approximation, heuristic, or alternative formulation is appropriate?
+
+The objective of this module is **algorithmic literacy for economists**. It is not intended to reproduce a complete computer science degree course in algorithms. The target is to become sufficiently comfortable with algorithms that you can formulate computational problems precisely, read pseudocode, analyse elementary complexity, implement standard methods, and collaborate productively with computer scientists.
+
+::: {.callout-important}
+## Target capability
+
+By the end of the module, you should be able to sit down with a computer scientist, translate an economic problem into a computational problem, discuss candidate algorithms and data structures, reason about scalability and tractability, read and modify pseudocode, and implement relatively simple algorithms in Python.
 :::
 
-## Why this matters
+## Indicative study commitment
 
-_To be developed._
+**Recommended pace:** 6 units, approximately 6 weeks.
+
+**Indicative effort:** 8 to 10 hours per unit.
+
+This is competency-based. Move faster if you already have algorithms training, and spend longer on implementation if algorithmic thinking is new to you.
+
+::: {.callout-note collapse="true"}
+## Prerequisites
+
+No previous formal algorithms course is assumed.
+
+You should be comfortable with:
+
+- elementary algebra and logarithms;
+- functions and basic mathematical notation;
+- basic Python syntax, including variables, conditionals, loops, functions, lists, tuples, sets, and dictionaries.
+
+If Python itself is still unfamiliar, use the opening material in [Part II, Module 1: Research-Level Python and Computing](../../part2/01-research-computing/index.qmd) before attempting the implementation exercises.
+
+Proof-writing experience is helpful but not required. The programme will introduce the level of correctness reasoning needed here.
+:::
 
 ## Learning outcomes
 
-_To be developed._
+After completing this module, you should be able to:
 
-## Core concepts
+1. **Specify** a computational problem in terms of inputs, outputs, assumptions, and constraints.
+2. **Read and write pseudocode** and translate between pseudocode and a simple Python implementation.
+3. **Explain correctness** using direct arguments, invariants, induction, or counterexamples at an introductory level.
+4. **Analyse computational cost** using asymptotic notation, including \(O(\cdot)\), \(\Omega(\cdot)\), and \(\Theta(\cdot)\).
+5. **Compare data structures** and explain why representation affects computational performance.
+6. **Recognise and apply** divide-and-conquer, greedy, dynamic-programming, and basic randomised approaches.
+7. **Use standard graph algorithms** as computational building blocks, while leaving the deeper study of networks to Module 2.
+8. **Distinguish tractable from computationally difficult problems** and explain the economic relevance of \(P\), \(NP\), NP-hardness, approximation, and heuristics.
+9. **Benchmark algorithms empirically** and relate observed scaling to theoretical complexity.
+10. **Communicate computational trade-offs** to collaborators from economics and computer science.
 
-_To be developed._
+## The economist's algorithmic vocabulary
 
-## Formal and computational formulation
+By the end of the module, expressions such as the following should feel natural rather than opaque:
 
-_To be developed._
+> "The exact welfare-maximising allocation is NP-hard, so we need either an approximation algorithm, a restricted domain, or a heuristic."
 
-## Core courses and video lectures
+> "The new data structure increases preprocessing cost but reduces the marginal cost of repeated queries."
 
-_To be developed._
+> "The greedy rule is fast, but we need to establish whether it is optimal, approximately optimal, or merely a useful heuristic."
+
+> "The mechanism is mathematically well defined, but we still need an algorithm that computes its outcome at the required scale."
+
+# Learning path
+
+## Unit 1: From economic problems to algorithms
+
+### Questions
+
+- What exactly is an algorithm?
+- How is an algorithm different from a programme?
+- How do we specify a computational problem?
+- What does it mean for an algorithm to be correct?
+- Why does scale matter?
+
+### Topics
+
+- input, output, and problem specification;
+- algorithms and computational procedures;
+- pseudocode;
+- correctness;
+- loop invariants and induction;
+- computational models;
+- running time and memory;
+- worst-case and average-case reasoning;
+- asymptotic growth;
+- \(O\), \(\Omega\), and \(\Theta\).
+
+### Core resources
+
+**1. Tim Roughgarden: Algorithms**
+
+Use the free video material accompanying *Algorithms Illuminated*, beginning with "Why Study Algorithms?", MergeSort, and asymptotic notation.
+
+[Tim Roughgarden's online algorithms courses and videos](https://www.timroughgarden.algorithmsilluminated.org/videos.html)
+
+**2. University of Cambridge: Algorithms 1**
+
+Use the introductory material on complexity and algorithm analysis. The current Cambridge course defines its aim as providing a foundation in algorithms and data structures, including time and space efficiency.
+
+[Cambridge Algorithms 1, 2025-26](https://www.cl.cam.ac.uk/teaching/2526/Algorithm1/)
+
+Cambridge also provides a set of curated public recordings produced for earlier editions of the course.
+
+[Cambridge public Algorithms recordings](https://www.cl.cam.ac.uk/teaching/2324/Algorithm1/recordings.html)
+
+### Implementation exercise
+
+Write pseudocode and Python for:
+
+1. finding the maximum of a list;
+2. finding both the maximum and second-largest value;
+3. determining whether a list contains a duplicate.
+
+For each algorithm:
+
+- state the input and output;
+- argue why it is correct;
+- count the dominant operations;
+- give its asymptotic running time;
+- test the prediction empirically for increasing \(n\).
+
+## Unit 2: Search, sorting, and data structures
+
+### Questions
+
+- Why does the way data are stored affect the speed of economic analysis?
+- When is preprocessing worth paying for?
+- How do repeated queries change the preferred algorithm?
+
+### Topics
+
+- linear search;
+- binary search;
+- insertion sort;
+- MergeSort;
+- QuickSort;
+- heaps and priority queues;
+- arrays and linked structures;
+- stacks and queues;
+- dictionaries and hash tables;
+- binary search trees;
+- preprocessing versus query cost.
+
+### Core resources
+
+**1. Cambridge Algorithms 1**
+
+Focus on sorting and elementary data structures.
+
+[Cambridge Algorithms 1](https://www.cl.cam.ac.uk/teaching/2526/Algorithm1/)
+
+**2. MIT 6.006: Introduction to Algorithms**
+
+Use selected lectures on data structures, sets and sorting, hashing, trees, and heaps. MIT OpenCourseWare provides lecture videos, notes, problem sets, and solutions.
+
+[MIT 6.006, Spring 2020](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/)
+
+**3. Open Data Structures**
+
+Use this free open textbook when you need a deeper explanation of lists, queues, hash tables, trees, heaps, or graph representations.
+
+[Open Data Structures](https://opendatastructures.org/)
+
+### Economics lens
+
+Think of an index as an investment.
+
+If a dataset is queried once, sorting or constructing a hash table may not be worthwhile. If it is queried millions of times, paying a fixed preprocessing cost can dramatically reduce the marginal computational cost of each query.
+
+This provides a useful analogy between algorithm design and familiar economic ideas about fixed cost, marginal cost, and scale.
+
+## Data Lab 1: Search and indexing in a large economic registry
+
+Choose one of the following open UK datasets.
+
+### Option A: HM Land Registry Price Paid Data
+
+HM Land Registry publishes transaction-level property sale data for England and Wales in downloadable CSV form.
+
+[HM Land Registry Price Paid Data](https://www.gov.uk/government/statistical-data-sets/price-paid-data-downloads)
+
+### Option B: Companies House
+
+Companies House publishes a free monthly snapshot of basic data for live UK companies in downloadable CSV files.
+
+[Companies House data products](https://www.gov.uk/guidance/companies-house-data-products)
+
+### Task
+
+Take a manageable sample, for example \(10^5\), \(5\times10^5\), and \(10^6\) records where your computer permits.
+
+Compare:
+
+1. linear search on an unsorted list;
+2. sorting followed by binary search;
+3. a dictionary/hash-based index.
+
+Measure:
+
+- preprocessing time;
+- query time;
+- memory use where feasible;
+- total time for \(1\), \(10\), \(100\), \(1{,}000\), and \(10{,}000\) queries.
+
+### Economic interpretation
+
+Identify the approximate break-even number of queries at which building an index becomes worthwhile.
+
+The lab should end with a short note explaining the computational analogue of:
+
+\[
+\text{fixed cost} + q\times\text{marginal query cost}.
+\]
+
+## Unit 3: Divide and conquer and randomisation
+
+### Questions
+
+- When can a large problem be split into smaller independent problems?
+- Why can randomisation improve an algorithm?
+- How do recurrences describe computational cost?
+
+### Topics
+
+- recursion;
+- divide and conquer;
+- MergeSort as a paradigm;
+- recurrence relations;
+- the Master Method at an intuitive level;
+- QuickSort;
+- random pivots;
+- randomised algorithms;
+- expected running time.
+
+### Core resources
+
+**1. Roughgarden: Algorithms, Part 1**
+
+Use the divide-and-conquer and randomised-algorithm videos.
+
+[Tim Roughgarden's algorithms videos](https://www.timroughgarden.algorithmsilluminated.org/videos.html)
+
+**2. NPTEL: Design and Analysis of Algorithms**
+
+The free archived course by Madhavan Mukund covers asymptotic complexity, searching and sorting, graph algorithms, divide and conquer, greedy algorithms, dynamic programming, data structures, and intractability.
+
+[NPTEL Design and Analysis of Algorithms](https://onlinecourses-archive.nptel.ac.in/noc18_cs37/preview)
+
+### Implementation exercise
+
+Implement MergeSort and a randomised QuickSort.
+
+For several input distributions:
+
+- random order;
+- already sorted;
+- reverse sorted;
+- many repeated values;
+
+compare empirical runtime and explain why input structure matters.
+
+## Unit 4: Greedy algorithms and dynamic programming
+
+### Questions
+
+- When does a locally attractive decision lead to a globally optimal result?
+- When must the algorithm remember the value of subproblems?
+- How do we recognise optimal substructure?
+
+### Topics
+
+- greedy choice;
+- exchange arguments;
+- interval scheduling;
+- Huffman coding as a canonical example;
+- optimal substructure;
+- overlapping subproblems;
+- memoisation;
+- bottom-up dynamic programming;
+- knapsack;
+- weighted interval scheduling;
+- sequential allocation and inventory interpretations.
+
+### Core resources
+
+**1. Roughgarden: Algorithms, Part 3**
+
+Covers greedy algorithms, minimum spanning trees, clustering, Huffman coding, knapsack, sequence alignment, and other dynamic-programming examples.
+
+[Tim Roughgarden's algorithms videos](https://www.timroughgarden.algorithmsilluminated.org/videos.html)
+
+**2. MIT 6.006**
+
+Use Lectures 15 to 18 from the Spring 2020 course for dynamic programming.
+
+[MIT 6.006 lecture videos](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/video_galleries/lecture-videos/)
+
+### Economics exercise
+
+Consider a firm choosing projects under a fixed budget.
+
+Each project \(i\) has cost \(c_i\) and value \(v_i\).
+
+1. Propose a greedy rule.
+2. Construct a counterexample in which your greedy rule fails.
+3. Formulate the problem as a 0-1 knapsack problem.
+4. Implement a dynamic-programming solution.
+5. Explain what happens computationally as the budget becomes very large.
+
+## Unit 5: Graph algorithms as economic building blocks
+
+This unit introduces graph algorithms only to the level required for general algorithmic literacy. Module 2 studies graphs and networks as objects of economic and social analysis in much greater depth.
+
+### Topics
+
+- graph representation;
+- breadth-first search;
+- depth-first search;
+- topological order;
+- shortest paths;
+- Dijkstra's algorithm;
+- Bellman-Ford;
+- minimum spanning trees;
+- flows and cuts;
+- bipartite matching as an allocation problem.
+
+### Core resources
+
+**1. Roughgarden: Algorithms, Part 2**
+
+Graph search, connectivity, shortest paths, heaps and related data structures.
+
+[Tim Roughgarden's algorithms videos](https://www.timroughgarden.algorithmsilluminated.org/videos.html)
+
+**2. MIT 6.006**
+
+Use selected lectures on BFS, DFS, weighted shortest paths, Bellman-Ford and Dijkstra.
+
+[MIT 6.006 lecture videos](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/video_galleries/lecture-videos/)
+
+**3. Jeff Erickson: Algorithms**
+
+The complete textbook is freely available. Particularly useful chapters for this unit include basic graph algorithms, shortest paths, maximum flows, and applications of flows and cuts.
+
+[Jeff Erickson, Algorithms](https://jeffe.cs.illinois.edu/teaching/algorithms/)
+
+## Historical reconstruction 1: Dijkstra's shortest-path algorithm
+
+Read:
+
+E. W. Dijkstra, "A Note on Two Problems in Connexion with Graphs" (1959). [Open full text at CWI](https://ir.cwi.nl/pub/9256). @dijkstra1959
+
+### Task
+
+1. Read the original paper before consulting a modern implementation.
+2. Restate the shortest-path problem using modern notation.
+3. Write pseudocode from your understanding of the paper.
+4. Implement the algorithm in Python.
+5. Compare your implementation with a library implementation.
+6. Explain the role played by the priority queue in a modern implementation.
+7. Identify assumptions under which Dijkstra's method should not be used.
+
+The objective is not merely to obtain shortest paths. It is to experience how an algorithm moves from a mathematical idea to precise pseudocode and then to an implementation.
+
+## Unit 6: Tractability, NP-hardness, approximation, and heuristics
+
+### Questions
+
+- What does it mean to say that a problem is computationally hard?
+- Why is polynomial time treated as a central boundary?
+- What should an economist do when the exact optimum is computationally infeasible?
+- What is lost when we use an approximation or heuristic?
+
+### Topics
+
+- decision versus optimisation problems;
+- polynomial and exponential time;
+- \(P\) and \(NP\);
+- reductions;
+- NP-hardness and NP-completeness;
+- exact versus approximate solutions;
+- approximation ratios;
+- heuristics;
+- local search;
+- computational constraints as part of economic design.
+
+### Core resources
+
+**1. Roughgarden: Algorithms, Part 4**
+
+Covers NP-completeness and strategies for dealing with computationally intractable problems.
+
+[Tim Roughgarden's algorithms videos](https://www.timroughgarden.algorithmsilluminated.org/videos.html)
+
+**2. MIT 6.006**
+
+Use Lecture 19 on complexity.
+
+[MIT 6.006, Lecture 19 and course materials](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/)
+
+**3. NPTEL: Design and Analysis of Algorithms**
+
+Week 8 provides a compact treatment of NP-completeness and reductions.
+
+[NPTEL course](https://onlinecourses-archive.nptel.ac.in/noc18_cs37/preview)
+
+### Conceptual checkpoint
+
+Be able to explain why these are different claims:
+
+1. "I do not know a fast algorithm."
+2. "No polynomial-time algorithm is currently known."
+3. "The problem is NP-hard."
+4. "The implementation is slow."
+5. "The asymptotic complexity is poor."
+6. "The worst-case complexity is poor, but typical instances may still be easy."
+
+# Spanish-language companion route
+
+For learners who want a parallel explanation in Spanish, the strongest open resource for this module is the Universidad Carlos III de Madrid OpenCourseWare course **Estructura de Datos y Algoritmos (Python)**.
+
+It includes theoretical notes, YouTube videos, problems, practical exercises, and self-assessment material, and covers data structures, algorithm analysis, recursion, graphs, and divide and conquer.
+
+[UC3M OpenCourseWare: Estructura de Datos y Algoritmos (Python)](https://ocw.uc3m.es/course/view.php?id=311)
+
+A second useful Spanish reference is the UNAM **Análisis de Algoritmos** syllabus, which covers complexity, search and sorting, BFS/DFS, shortest paths, minimum spanning trees, NP-complete problems, approximation, and network flow.
+
+[UNAM: Análisis de Algoritmos](https://www.fciencias.unam.mx/docencia/horarios/presentacion/356803)
 
 ::: {.callout-note collapse="true"}
-## Seminal papers
+## Additional open textbooks and references
 
-_To be populated._
+### Jeff Erickson: Algorithms
+
+A rigorous, freely available algorithms textbook covering recursion, dynamic programming, greedy methods, graphs, shortest paths, flows, NP-hardness, and more.
+
+[Free textbook and course materials](https://jeffe.cs.illinois.edu/teaching/algorithms/)
+
+### Open Data Structures
+
+A free textbook focused on the implementation and analysis of lists, queues, hash tables, trees, heaps, and graph representations.
+
+[Open Data Structures](https://opendatastructures.org/)
+
+### Cormen, Leiserson, Rivest and Stein: Introduction to Algorithms
+
+A standard comprehensive reference. It is not required to complete this module and is not listed as a free resource.
+
+### Kleinberg and Tardos: Algorithm Design
+
+Particularly useful for problem-solving style, greedy methods, dynamic programming, network flow, and approximation. It is an optional reference.
 :::
+
+# Seminal papers
 
 ::: {.callout-note collapse="true"}
-## Additional readings and alternative resources
+## Foundational reading
 
-_To be populated._
+### Dijkstra (1959)
+
+Dijkstra's short paper introduced methods for the shortest-path problem and minimum spanning trees. An open version is available from the Centrum Wiskunde & Informatica. @dijkstra1959
+
+[Open full text](https://ir.cwi.nl/pub/9256)
+
+### Ford and Fulkerson (1956)
+
+Ford and Fulkerson's transportation paper connects algorithm design directly to a classical economic and operations-research allocation problem. @fordfulkerson1956
+
+[Article page](https://pubsonline.informs.org/doi/10.1287/mnsc.3.1.24)
+
+### Cook (1971)
+
+Cook's paper is one of the foundations of computational complexity and NP-completeness. The ACM version is openly accessible, and the author's University of Toronto page also provides scanned and retyped copies. @cook1971
+
+[Author's page](https://www.cs.toronto.edu/~sacook/)
+
+### Karp (1972)
+
+Karp showed that a large family of classic combinatorial problems are polynomially related through reductions, establishing NP-completeness across problems involving covering, packing, routing, assignment, and sequencing. @karp1972
+
+### Nisan and Ronen (2001): preview of what comes next
+
+This paper is not required for the algorithms material itself. Read the introduction after Unit 6 as a preview of **algorithmic economics**: what happens when the input to an algorithm is controlled by self-interested agents? @nisanronen2001
+
+[Publication record](https://cris.huji.ac.il/en/publications/algorithmic-mechanism-design-13/)
 :::
 
-## Case or institution
+# Data Lab 2: Allocation algorithms and the assignment problem
 
-_To be populated._
+The **OR-Library**, created at Brunel University, provides benchmark datasets for operations-research problems.
 
-## Data lab
+[OR-Library](https://people.brunel.ac.uk/~mastjjb/jeb/info.html)
 
-_To be populated._
+For the classical assignment problem, it provides 12 benchmark datasets and known optimal objective values.
 
-## Replication project
+[OR-Library assignment datasets](https://people.brunel.ac.uk/~mastjjb/jeb/orlib/assigninfo.html)
 
-_To be populated._
+### Task
+
+Treat the cost matrix as an economic allocation problem in which \(n\) tasks must be assigned to \(n\) agents.
+
+1. Construct a simple greedy allocation rule.
+2. Measure its objective value.
+3. Solve the same instance with an exact assignment algorithm from a trusted software library.
+4. Compare the greedy and optimal solutions.
+5. Repeat for increasing instance sizes.
+6. Measure runtime.
+7. Report both:
+   - computational performance;
+   - economic performance, measured by the allocation-cost gap.
+
+### Main question
+
+How much economic value are you willing to sacrifice for computational speed?
+
+This question will recur throughout Part I.
+
+# Replication project: OR-Library benchmark results
+
+Use the OR-Library assignment instances and the accompanying published optimal values.
+
+Your goal is to reproduce a selection of the known optimal solutions computationally and document the process.
+
+### Minimum requirements
+
+- load at least four instance sizes;
+- solve each with an exact method;
+- confirm the reported optimum;
+- compare against at least one simple heuristic;
+- benchmark runtime;
+- plot runtime against problem size;
+- explain what the results do and do not tell you about asymptotic complexity.
+
+::: {.callout-tip}
+## Research habit
+
+A successful replication is not "my code ran".
+
+Record:
+
+- data source and version;
+- algorithm;
+- software/library version;
+- machine environment;
+- random seed where relevant;
+- runtime measurement procedure;
+- objective values;
+- discrepancies;
+- limitations.
+
+These habits will become mandatory in later modules.
+:::
+
+# Historical reconstruction 2: Transportation and network flow
+
+Ford and Fulkerson's 1956 paper, *Solving the Transportation Problem*, is especially useful for economists because it presents an algorithmic treatment of the Hitchcock-Koopmans transportation problem. @fordfulkerson1956
+
+### Suggested exercise
+
+1. Reconstruct the illustrative transportation problem from the paper.
+2. Express it as a network.
+3. Implement or use a max-flow or transportation solver.
+4. Reproduce the solution.
+5. Vary one capacity or cost.
+6. Explain the economic interpretation of the resulting allocation.
+
+This exercise anticipates later work on networks, resource allocation, and market design.
+
+# Case studies and institutions
 
 ::: {.callout-note collapse="true"}
-## Dataset documentation
+## Why these cases are included
 
-_To be populated._
+The purpose of the cases is not yet to study the institutions in full. Instead, use them to identify the **computational problem hidden inside an economic system**.
+
+### Companies House
+
+A public register containing millions of company records creates problems of indexing, search, sorting, deduplication, and repeated queries.
+
+[Companies House data products](https://www.gov.uk/guidance/companies-house-data-products)
+
+### HM Land Registry
+
+Transaction-level property data provide a large economic dataset for exploring sorting, searching, indexing, order statistics, and scalability.
+
+[Price Paid Data](https://www.gov.uk/government/statistical-data-sets/price-paid-data-downloads)
+
+### Transportation and logistics
+
+Transportation problems provide an early example of economic allocation being translated into an algorithmic optimisation problem.
+
+### Matching and allocation systems
+
+Deferred acceptance, kidney exchange, course allocation, and labour-market matching will appear later in Part I. For now, notice that their economic rules ultimately have to be implemented as algorithms.
+
+### Auctions and digital markets
+
+Spectrum auctions and online advertising will later illustrate a stronger requirement: the algorithm must be computationally feasible **and** must account for strategic behaviour.
 :::
+
+# Programming and implementation standard
+
+For each non-trivial algorithm you implement, your notebook or script should contain:
+
+1. **Problem definition**
+2. **Pseudocode**
+3. **Python implementation**
+4. **Correctness argument**
+5. **Complexity analysis**
+6. **Tests**
+7. **Benchmark**
+8. **Economic interpretation**
+
+Do not begin by importing a library implementation.
+
+Implement the simple version yourself first. Then compare your implementation against a trusted library implementation where one exists.
 
 ::: {.callout-note collapse="true"}
-## Code and implementation
+## Suggested repository structure
 
-_To be populated._
+```text
+module-01-algorithms/
+├── README.md
+├── data/
+│   └── README.md
+├── src/
+│   ├── search.py
+│   ├── sorting.py
+│   ├── greedy.py
+│   ├── dynamic_programming.py
+│   └── graph_algorithms.py
+├── notebooks/
+│   ├── 01-scaling.ipynb
+│   ├── 02-search-indexing.ipynb
+│   └── 03-assignment.ipynb
+├── tests/
+│   └── ...
+└── results/
+    └── ...
+```
+
+Large downloaded datasets should normally **not** be committed to Git. Document how to obtain them instead.
 :::
+
+# Module project: Computational cost as an economic constraint
+
+## Question
+
+**When does the computational method change the economically preferred solution?**
+
+Choose one of:
+
+- repeated search/indexing using Companies House or Land Registry data;
+- assignment using OR-Library;
+- a shortest-path or transportation problem.
+
+### Required elements
+
+1. State the economic problem.
+2. Define the computational problem formally.
+3. Implement at least two algorithms or computational approaches.
+4. Provide theoretical complexity analysis.
+5. Benchmark empirical performance as problem size changes.
+6. Compare solution quality where the methods produce different outcomes.
+7. Explain the economic meaning of the computational trade-off.
+8. Produce a reproducible repository.
+
+### Deliverable
+
+A concise research note of approximately **1,500 to 2,000 words**, plus code and reproduction instructions.
+
+The note should contain:
+
+- problem and motivation;
+- algorithmic formulation;
+- methods;
+- complexity analysis;
+- computational experiment;
+- results;
+- economic interpretation;
+- limitations;
+- next research question.
+
+# Completion criteria
+
+You are ready for [Module 2: Graphs, Networks and Computational Structures](../02-graphs-networks/index.qmd) when you can do all of the following without relying heavily on step-by-step instructions:
+
+- translate a verbal economic problem into inputs, outputs, and constraints;
+- write readable pseudocode;
+- explain \(O(n)\), \(O(n\log n)\), \(O(n^2)\), and exponential growth;
+- distinguish preprocessing cost from query cost;
+- implement and analyse binary search and at least one \(O(n\log n)\) sorting algorithm;
+- recognise divide-and-conquer, greedy, and dynamic-programming structures;
+- explain BFS, DFS, and shortest-path algorithms at a conceptual level;
+- explain what NP-hardness means without saying simply "the problem is difficult";
+- distinguish exact algorithms, approximation algorithms, and heuristics;
+- benchmark an algorithm and interpret the result cautiously;
+- explain at least one case in which computational constraints affect an economic allocation or decision.
+
+::: {.callout-success}
+## Final checkpoint
+
+You should now be able to read an economics or computer-science paper containing pseudocode and complexity claims without treating the algorithmic component as a black box.
+
+[Continue to Module 2: Graphs, Networks and Computational Structures](../02-graphs-networks/index.qmd)
+:::
+
+# Optional research frontier
 
 ::: {.callout-tip collapse="true"}
-## Research frontier and extension
+## Where algorithm research goes beyond this module
 
-_To be populated._
+### Beyond worst-case analysis
+
+Worst-case complexity is fundamental, but it can be uninformative about the instances encountered in practice. Tim Roughgarden's advanced course explores instance optimality, smoothed analysis, resource augmentation, planted models, and other alternatives.
+
+[Roughgarden: Beyond Worst-Case Analysis](https://www.timroughgarden.algorithmsilluminated.org/f14/f14.html)
+
+### Learning-augmented algorithms
+
+A growing research direction studies algorithms that incorporate predictions produced by machine-learning systems while retaining formal performance guarantees. This provides one bridge from classical algorithms to Part II of the programme.
+
+### Algorithmic mechanism design
+
+Nisan and Ronen's work asks how algorithm design changes when computational inputs are supplied by strategic, self-interested agents. This is one of the key intellectual bridges from Module 1 to the mechanism-design modules later in Part I. @nisanronen2001
 :::
