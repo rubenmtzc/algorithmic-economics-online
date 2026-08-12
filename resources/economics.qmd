@@ -1,0 +1,13 @@
+---
+title: "Economics"
+sidebar: resources
+toc: true
+---
+
+Optional economics foundations and extensions: microeconomic theory, game theory, information economics, industrial organisation, econometrics, behavioural economics, digital economics, and related fields.
+
+::: {.callout-note}
+## Status
+
+This catalogue will be populated alongside the individual modules.
+:::

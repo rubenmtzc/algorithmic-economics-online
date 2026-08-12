@@ -1,0 +1,13 @@
+---
+title: "Spanish-Language Resources"
+sidebar: resources
+toc: true
+---
+
+High-quality Spanish-language mathematics, economics, computer science, and research resources. These resources will also be integrated directly into module rankings where appropriate.
+
+::: {.callout-note}
+## Status
+
+This catalogue will be populated alongside the individual modules.
+:::

@@ -1,0 +1,13 @@
+---
+title: "Papers"
+sidebar: resources
+toc: true
+---
+
+A programme-wide index of seminal theoretical papers, landmark applied papers, replication targets, and research-frontier work.
+
+::: {.callout-note}
+## Status
+
+This catalogue will be populated alongside the individual modules.
+:::

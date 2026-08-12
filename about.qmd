@@ -1,0 +1,25 @@
+---
+title: "About"
+sidebar: false
+toc: true
+---
+
+## Algorithmic Economics
+
+**Algorithmic Economics** is an open learning and research programme connecting economics, computer science, data, and artificial intelligence.
+
+Its focus is the analysis and design of markets, mechanisms, networks, platforms, allocation systems, strategic multi-agent environments, and emerging digital institutions.
+
+## Design principles
+
+- rigorous economic reasoning;
+- algorithmic and computational literacy;
+- reproducible implementation;
+- engagement with real institutions and data;
+- replication as a learning method;
+- international and multilingual resources where appropriate;
+- progression from foundations to research-frontier questions.
+
+## Repository
+
+[View the repository](https://github.com/rubenmtzc/algorithmic-economics-online)

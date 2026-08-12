@@ -1,0 +1,9 @@
+---
+title: "Page not found"
+sidebar: false
+toc: false
+---
+
+The page you requested could not be found. It may have moved during the restructuring of the programme.
+
+Use the site search above or return to the [Algorithmic Economics home page](index.qmd).

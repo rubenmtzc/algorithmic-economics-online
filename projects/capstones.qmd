@@ -1,0 +1,13 @@
+---
+title: "Capstone Projects"
+sidebar: projects
+toc: true
+---
+
+Substantial integrative projects designed to demonstrate research-level competence.
+
+::: {.callout-note}
+## Status
+
+Projects will be added module by module in the next phase.
+:::

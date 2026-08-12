@@ -1,0 +1,13 @@
+---
+title: "Replication Projects"
+sidebar: projects
+toc: true
+---
+
+Replications of published theoretical, computational, experimental, and empirical results.
+
+::: {.callout-note}
+## Status
+
+Projects will be added module by module in the next phase.
+:::

@@ -1,0 +1,48 @@
+---
+title: "Mathematics"
+sidebar: resources
+toc: true
+---
+
+Optional mathematical foundations and extensions.
+
+## Real analysis
+
+### MIT 18.100B — Real Analysis
+
+- **Level:** Advanced undergraduate
+- **Purpose:** Mathematical maturity, proof-writing, rigorous analysis
+- **Format:** Video lectures, lecture notes, problem sets
+- **Language:** English
+- **Programme status:** Optional
+- **Best used:** Before or alongside advanced optimisation, theoretical game theory, statistical learning theory, or theoretical machine learning
+
+- [MIT OpenCourseWare course page](https://ocw.mit.edu/courses/18-100b-real-analysis-spring-2025/)
+- [MIT video lecture playlist](https://www.youtube.com/playlist?list=PLUl4u3cNGP62Ie7F_tTAhhXoX5_Cl8meG)
+
+::: {.callout-note collapse="true"}
+## More real-analysis resources
+
+Additional resources will be added and ranked by usefulness.
+:::
+
+## Calculus
+_To be populated._
+
+## Linear algebra
+_To be populated._
+
+## Probability
+_To be populated._
+
+## Statistics
+_To be populated._
+
+## Optimisation
+_To be populated._
+
+## Discrete mathematics
+_To be populated._
+
+## Stochastic processes
+_To be populated._

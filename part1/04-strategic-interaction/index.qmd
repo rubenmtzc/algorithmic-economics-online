@@ -1,0 +1,75 @@
+---
+title: "Module 4 — Strategic Interaction and Multi-Agent Systems"
+sidebar: part1
+toc: true
+---
+
+Game-theoretic models, equilibrium, computation, congestion games, repeated interaction, and multi-agent environments.
+
+::: {.callout-note}
+## Status
+
+This page is an initial programme placeholder. Datasets, replications, papers, cases, exercises, and detailed learning resources will be added in the next phase.
+:::
+
+## Why this matters
+
+_To be developed._
+
+## Learning outcomes
+
+_To be developed._
+
+## Core concepts
+
+_To be developed._
+
+## Formal and computational formulation
+
+_To be developed._
+
+## Core courses and video lectures
+
+_To be developed._
+
+::: {.callout-note collapse="true"}
+## Seminal papers
+
+_To be populated._
+:::
+
+::: {.callout-note collapse="true"}
+## Additional readings and alternative resources
+
+_To be populated._
+:::
+
+## Case or institution
+
+_To be populated._
+
+## Data lab
+
+_To be populated._
+
+## Replication project
+
+_To be populated._
+
+::: {.callout-note collapse="true"}
+## Dataset documentation
+
+_To be populated._
+:::
+
+::: {.callout-note collapse="true"}
+## Code and implementation
+
+_To be populated._
+:::
+
+::: {.callout-tip collapse="true"}
+## Research frontier and extension
+
+_To be populated._
+:::

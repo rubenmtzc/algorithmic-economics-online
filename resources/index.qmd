@@ -1,0 +1,31 @@
+---
+title: "Additional Resources"
+subtitle: "Optional foundations, enrichment, references, data, and research tools"
+sidebar: resources
+toc: true
+---
+
+This section contains high-quality resources that are useful for Algorithmic Economics but are **not necessarily part of the formal learning sequence**.
+
+Use it to strengthen prerequisites, revisit mathematical or disciplinary foundations, explore a topic more deeply, or locate data, software, papers, and cases.
+
+## Foundations and enrichment
+
+- [Mathematics](mathematics.qmd)
+- [Economics](economics.qmd)
+- [Computer Science](computer-science.qmd)
+- [Research Methods](research-methods.qmd)
+- [Spanish-Language Resources](spanish-language.qmd)
+
+## Programme support
+
+- [Datasets](datasets.qmd)
+- [Papers](papers.qmd)
+- [Cases and Institutions](cases.qmd)
+- [Software and Tools](software.qmd)
+
+::: {.callout-note collapse="true"}
+## How resources will be labelled
+
+Each resource can be described by level, purpose, format, language, access, and the module or skill for which it is most useful.
+:::

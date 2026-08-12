@@ -1,266 +1,117 @@
 ---
-title: "Part 2. — Computing for Research"
-subtitle: "From scripts to reproducible research software"
+title: "Algorithmic Economics"
+subtitle: "Economics, computation, learning, and the design of markets and institutions"
+toc: false
+sidebar: false
+page-navigation: false
 ---
 
-## Purpose
+**Algorithmic Economics** is a structured learning and research programme at the intersection of economics and computer science. It studies economic institutions as computational systems and develops the technical toolkit required to analyse, simulate, design, and evaluate them.
 
-This stage develops the computing foundation needed for the rest of the programme using Python. The goal is not merely to *use Python*, but to write research code that is readable, tested, reproducible and suitable for extension into machine-learning research.
-It is a 10-week programme covering Python, NumPy, pandas, Polars, SQL, scikit-learn, PyTorch, Linux/shell, Git, testing, packaging and reproducible research software. I have used current online resources freely available, including Harvard CS50P, MIT's 2026 Missing Semester, Harvard CS50 SQL, and the current NumPy/pandas/Polars/PyTorch/scikit-learn documentation. CS50P can be completed using its browser-based development environment; MIT's 2026 Missing Semester includes recorded lectures on shell, Git, debugging, packaging and code quality. The current technical documentation also reflects recent versions of NumPy, pandas, scikit-learn and PyTorch.
+The programme is organised into two complementary parts.
 
-**Suggested duration:** 10 weeks  
-**Workload:** 10–12 hours per week
+:::: {.columns}
+::: {.column width="50%"}
+## [Part I — Economics × Computer Science](part1/index.qmd)
 
-## Learning outcomes
+Markets, mechanisms, networks, strategic interaction, social choice, platforms, and digital institutions.
 
-By the end of this stage, you should be able to:
+Part I asks:
 
-- write idiomatic Python using functions, modules, classes, type hints and exceptions;
-- work efficiently with NumPy arrays and vectorised numerical computation;
-- clean, reshape and analyse data with pandas and Polars;
-- query relational data using SQL, including joins, CTEs and window functions;
-- use the scikit-learn estimator and pipeline APIs correctly;
-- use PyTorch tensors, datasets, automatic differentiation and basic modules;
-- work comfortably in a shell and use Git/GitHub for version control;
-- structure, test, document and package a small research project;
-- reproduce a complete empirical workflow from raw data to final results.
+> **What economic and institutional problems become computational problems?**
 
-## Core courses
+[Enter Part I →](part1/index.qmd)
+:::
 
-### Harvard — CS50's Introduction to Programming with Python
+::: {.column width="50%"}
+## [Part II — Computational and AI Research Toolkit](part2/index.qmd)
 
-[Course website](https://cs50.harvard.edu/python/)
+Research computing, machine learning, causal ML, deep learning, optimisation, reinforcement learning, multi-agent learning, and foundation models.
 
-Use this selectively rather than treating it as a compulsory ten-week course. Prioritise:
+Part II asks:
 
-- functions and variables;
-- exceptions;
-- libraries;
-- unit tests;
-- file I/O;
-- object-oriented programming.
+> **What computational, statistical, and AI tools are needed to study and design these systems?**
 
-The course can be completed using the browser-based `cs50.dev` environment, so a local Python installation is not essential.
+[Enter Part II →](part2/index.qmd)
+:::
+::::
 
-### MIT — The Missing Semester of Your CS Education (2026)
+## Learning philosophy
 
-[Course website and videos](https://missing.csail.mit.edu/2026/)
+The programme does not treat economic theory, computation, data, and artificial intelligence as separate subjects. Wherever possible, learning follows the sequence
 
-Prioritise:
+\[
+\text{economic question}
+\rightarrow
+\text{formal model}
+\rightarrow
+\text{algorithm}
+\rightarrow
+\text{implementation}
+\rightarrow
+\text{data or simulation}
+\rightarrow
+\text{replication}
+\rightarrow
+\text{research extension}.
+\]
 
-- shell and command-line environment;
-- development environments and tools;
-- debugging and profiling;
-- Git;
-- packaging and shipping code;
-- code quality.
+The emphasis is on **active, reproducible, research-oriented learning**. Learners are expected not only to understand models, but also to implement algorithms, work with real or simulated data, reproduce results, evaluate institutions, and formulate extensions.
 
-### Harvard — CS50's Introduction to Databases with SQL
+## Programme objectives
 
-[Course website](https://cs50.harvard.edu/sql/)
+By completing the programme, a learner should be able to:
 
-For this stage, complete the material on:
+- move fluently between economic and computational formulations of a problem;
+- reason about incentives, equilibrium, welfare, information, and strategic behaviour;
+- understand and discuss algorithms, computational complexity, optimisation, and network structures;
+- implement economic and computational models in reproducible research workflows;
+- use modern statistical learning, causal machine learning, deep learning, and sequential-decision methods;
+- analyse real markets, platforms, allocation systems, and digital institutions;
+- reproduce and critically evaluate theoretical, computational, and empirical research;
+- collaborate effectively across economics and computer science;
+- identify research questions at the frontier of algorithmic economics.
 
-- querying;
-- relating tables;
-- database design;
-- views;
-- indexes and optimisation.
+## What the programme produces
 
-## Week-by-week plan
+The intended final outcome is not simply completion of a sequence of courses. Learners should leave with a **research portfolio** containing implementations, data laboratories, replications, case studies, and one or more substantial research projects.
 
-| Week | Topic | Core work | Output |
-|---|---|---|---|
-| **1** | Shell, Git and Python workflow | Terminal navigation, files, processes, Git commits/branches, Python execution, environments | Create a clean research repository |
-| **2** | Python as a programming language | Functions, scope, modules, iterators, exceptions, classes, type hints, file handling | Refactor one old research script into modules |
-| **3** | NumPy and numerical computing | Arrays, shapes, indexing, broadcasting, vectorisation, random generators, linear algebra, copies/views | Reimplement common econometric matrix operations |
-| **4** | pandas for empirical research | Import/export, selection, joins, groupby, reshaping, missing data, categorical data, dates, validation | Clean and construct an analysis-ready panel dataset |
-| **5** | Polars and efficient data workflows | Expressions, lazy execution, query optimisation, joins, group operations, Parquet/Arrow | Reproduce Week 4 in Polars and benchmark it |
-| **6** | SQL and relational data | SELECT, JOIN, GROUP BY, CTEs, subqueries, window functions, keys, normalisation, indexes | Build and query a small relational economic database |
-| **7** | scikit-learn as a software framework | Estimators, transformers, preprocessing, `Pipeline`, `ColumnTransformer`, train/test discipline | Build a leakage-safe predictive pipeline |
-| **8** | PyTorch foundations | Tensors, NumPy interoperability, `Dataset`, `DataLoader`, `nn.Module`, autograd, optimisation loop | Implement linear regression in PyTorch |
-| **9** | Research software engineering | `pytest`, assertions, typing, logging, configuration, profiling, package layout, `pyproject.toml` | Convert the project into a tested Python package |
-| **10** | Reproducibility capstone | End-to-end data pipeline, CLI/script entry point, documentation, environment specification, Git release | Publish the Stage 1 capstone repository |
+:::: {.columns}
+::: {.column width="50%"}
+### [Projects](projects/index.qmd)
 
-## Essential technical references
+Data labs, replication exercises, module projects, and capstones connect theory to implementation and evidence.
+:::
 
-### Python
+::: {.column width="50%"}
+### [Additional Resources](resources/index.qmd)
 
-Python Software Foundation. *The Python Tutorial*.  
-[Official documentation](https://docs.python.org/3/tutorial/)
+Optional mathematics, economics, computer science, research-methods, datasets, papers, cases, and software resources support deeper study or prerequisite revision.
+:::
+::::
 
-For deeper Python practice:
+::: {.callout-note collapse="true"}
+## How should I use the programme?
 
-Ramalho, L. (2022). *Fluent Python* (2nd ed.). O'Reilly Media.
+The programme is designed to be flexible.
 
-### NumPy
+**Follow the full sequence** if you want a systematic route through economics and computer science.
 
-NumPy Developers. *NumPy User Guide*.  
-[Official user guide](https://numpy.org/doc/stable/user/)
+**Enter selectively** if you already have strong preparation in particular areas.
 
-Focus on:
+**Use Additional Resources** when you need to strengthen prerequisites or explore a topic beyond the formal programme.
 
-- array creation;
-- indexing;
-- broadcasting;
-- data types;
-- copies and views;
-- universal functions;
-- linear algebra.
+**Use the projects as checkpoints.** A topic is not considered mastered merely because its lectures or readings have been completed.
+:::
 
-### pandas
+::: {.callout-tip collapse="true"}
+## How are resources selected?
 
-pandas Development Team. *pandas User Guide*.  
-[Official user guide](https://pandas.pydata.org/docs/user_guide/)
+Resources are ranked by their usefulness for the learning objective rather than by geography or institution. Where several excellent resources exist, they are combined rather than substituted. The programme deliberately includes material from the UK, Europe, North America, Latin America, Asia, and elsewhere, in English and Spanish where high-quality material is available.
+:::
 
-Focus on:
+## Start
 
-- indexing;
-- merge/join;
-- reshaping;
-- missing data;
-- `groupby`;
-- window operations;
-- time series;
-- performance.
+**New to the economics–computer science interface?** Begin with [Part I](part1/index.qmd).
 
-A useful book is:
-
-McKinney, W. (2022). *Python for Data Analysis: Data Wrangling with pandas, NumPy, and Jupyter* (3rd ed.). O'Reilly Media.
-
-### Polars
-
-Polars Contributors. *Polars User Guide*.  
-[Official documentation](https://docs.pola.rs/)
-
-Start with the [pandas-to-Polars migration guide](https://docs.pola.rs/user-guide/migration/pandas/). Do not simply translate pandas syntax line by line: learn the Polars expression model and lazy API.
-
-### SQL
-
-PostgreSQL Global Development Group. *PostgreSQL Documentation: Tutorial*.  
-[Official tutorial](https://www.postgresql.org/docs/current/tutorial.html)
-
-You should be comfortable with:
-
-```sql
-SELECT
-FROM
-WHERE
-JOIN
-GROUP BY
-HAVING
-WITH
-CASE
-OVER (PARTITION BY ...)
-```
-
-### scikit-learn
-
-scikit-learn Developers. *scikit-learn User Guide*.  
-[Official user guide](https://scikit-learn.org/stable/user_guide.html)
-
-For Stage 1, concentrate on software structure rather than ML theory:
-
-```python
-Pipeline
-ColumnTransformer
-fit
-transform
-predict
-```
-
-Model selection and statistical learning are treated properly in Stage 2.
-
-### PyTorch
-
-PyTorch Contributors. *Learn the Basics — PyTorch Tutorials*.  
-[Official tutorial](https://docs.pytorch.org/tutorials/beginner/basics/)
-
-Complete:
-
-- tensors;
-- datasets and dataloaders;
-- building a model;
-- automatic differentiation;
-- optimisation;
-- saving/loading models.
-
-Deep-learning theory begins in Stage 4.
-
-### Git
-
-Chacon, S., & Straub, B. (2014). *Pro Git* (2nd ed.). Apress.  
-[Free online edition](https://git-scm.com/book/en/v2)
-
-## Coding standard
-
-From this stage onwards, avoid repositories consisting mainly of one large notebook.
-
-Prefer:
-
-```text
-project/
-├── README.md
-├── pyproject.toml
-├── src/
-│   └── project_name/
-├── tests/
-├── notebooks/
-├── scripts/
-├── data/
-└── results/
-```
-
-Use notebooks primarily for exploration and exposition. Put reusable functions and substantive computational logic in `src/`.
-
-## Stage 1 capstone
-
-Rebuild one empirical economics project as a reproducible research-software project.
-
-A suitable workflow is:
-
-```text
-raw data
-   ↓
-SQL / structured storage
-   ↓
-Python extraction and validation
-   ↓
-pandas or Polars transformation
-   ↓
-NumPy / statistical computation
-   ↓
-scikit-learn or PyTorch demonstration
-   ↓
-tables and figures
-   ↓
-automated tests
-   ↓
-documented GitHub repository
-```
-
-### Minimum requirements
-
-The repository must include:
-
-- a clear `README.md`;
-- a reproducible environment;
-- raw-to-analysis data scripts;
-- reusable code under `src/`;
-- at least five meaningful automated tests;
-- no undocumented manual data-cleaning steps;
-- at least one SQL query involving multiple tables;
-- at least one vectorised NumPy operation;
-- one pandas/Polars data pipeline;
-- one minimal scikit-learn or PyTorch example;
-- a tagged Git release.
-
-## Completion criterion
-
-Do not move to Stage 2 merely because all videos have been watched.
-
-Stage 1 is complete when you can take an unfamiliar empirical dataset and independently build a repository that another researcher can clone, understand and reproduce without asking you how your code works.
-
-## Next stage
-
-[Stage 2 — Statistical Learning](../02-statistical-learning/index.qmd)
+**Already comfortable with game theory, mechanisms, markets, and algorithms?** You may begin with [Part II](part2/index.qmd) and use Part I selectively.

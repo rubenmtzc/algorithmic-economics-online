@@ -1,0 +1,13 @@
+---
+title: "Software and Tools"
+sidebar: resources
+toc: true
+---
+
+Software libraries, research tools, simulation environments, repositories, and computational resources used throughout the programme.
+
+::: {.callout-note}
+## Status
+
+This catalogue will be populated alongside the individual modules.
+:::

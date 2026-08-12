@@ -1,0 +1,13 @@
+---
+title: "Datasets"
+sidebar: resources
+toc: true
+---
+
+A searchable programme-wide catalogue of freely available datasets used by Data Labs, replications, and projects.
+
+::: {.callout-note}
+## Status
+
+This catalogue will be populated alongside the individual modules.
+:::

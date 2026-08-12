@@ -1,34 +1,34 @@
 ---
-title: "Projects and Replications"
+title: "Projects"
+subtitle: "From understanding to implementation, replication, and research"
+sidebar: projects
+toc: true
 ---
 
-Use this area to record substantive outputs rather than course completion.
+Projects are integral to Algorithmic Economics. They convert passive understanding into reproducible research skills.
 
-## Project template
+## Project progression
 
-For each project include:
+### [Data Labs](data-labs.qmd)
+Short exercises using real or simulated data to implement concepts and algorithms.
 
-- research question;
-- economic/statistical assumptions;
-- dataset and provenance;
-- method;
-- benchmark;
-- implementation notes;
-- robustness checks;
-- results;
-- what failed;
-- possible research extension;
-- link to code/notebook.
+### [Replication Projects](replications.qmd)
+Structured reproductions of published theoretical, computational, experimental, or empirical results.
 
-## Suggested progression
+### [Capstone Projects](capstones.qmd)
+Larger projects combining an economic question, formal model, computational implementation, evidence, evaluation, and a research extension.
 
-1. Reproducible empirical pipeline
-2. Statistical-learning benchmark
-3. Causal-ML replication
-4. Transformer from scratch
-5. Algorithmic allocation problem
-6. Dynamic-pricing RL environment
-7. Learned mechanism
-8. Multi-agent artificial market
-9. Relational foundation-model benchmark
-10. Frontier research extension
+::: {.callout-note collapse="true"}
+## Common project architecture
+
+1. Define the economic or institutional problem.
+2. Specify agents, preferences, information, actions, and constraints.
+3. Formulate the computational problem.
+4. Implement the algorithm or model.
+5. Use real data, synthetic data, or an appropriate simulation environment.
+6. Compare against a benchmark.
+7. Reproduce or validate an existing result where possible.
+8. Conduct sensitivity and robustness analysis.
+9. Identify strategic, computational, empirical, or governance limitations.
+10. Propose an extension.
+:::

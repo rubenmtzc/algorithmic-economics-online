@@ -1,0 +1,50 @@
+---
+title: "Part I — Economics × Computer Science"
+subtitle: "Markets, mechanisms, networks, strategic interaction, and digital institutions"
+sidebar: part1
+toc: true
+---
+
+Part I develops the substantive intellectual intersection between economics and computer science. Its central premise is that many markets and institutions are now **designed, implemented, and mediated computationally**, while algorithms themselves operate in environments populated by strategic agents.
+
+The first two modules build computational literacy for economists. The remainder develops the economic and computational analysis of strategic interaction, information, mechanisms, markets, networks, collective choice, learning, platforms, and digital institutions.
+
+## A. Computational foundations
+
+1. [Algorithms for Economists](01-algorithms-economists/index.qmd)
+2. [Graphs, Networks and Computational Structures](02-graphs-networks/index.qmd)
+
+## B. Strategic and economic foundations
+
+3. [The Economics–Computer Science Interface](03-econ-cs-interface/index.qmd)
+4. [Strategic Interaction and Multi-Agent Systems](04-strategic-interaction/index.qmd)
+5. [Information Economics in Digital Environments](05-information-economics/index.qmd)
+
+## C. Designing markets and institutions
+
+6. [Mechanism Design](06-mechanism-design/index.qmd)
+7. [Auctions and Market Design](07-auctions-market-design/index.qmd)
+8. [Matching Markets](08-matching-markets/index.qmd)
+9. [Computational Social Choice](09-computational-social-choice/index.qmd)
+
+## D. Algorithmic economic systems
+
+10. [Economic and Social Networks](10-economic-social-networks/index.qmd)
+11. [Optimisation and Resource Allocation](11-optimisation-resource-allocation/index.qmd)
+12. [Learning and Decision-Making under Uncertainty](12-learning-uncertainty/index.qmd)
+13. [Platforms and Digital Markets](13-platforms-digital-markets/index.qmd)
+14. [Online Advertising and Algorithmic Markets](14-online-advertising/index.qmd)
+15. [Fairness, Privacy, Accountability and Governance](15-fairness-privacy-governance/index.qmd)
+16. [Fintech, Payments, Blockchain and Digital Institutions](16-fintech-blockchain/index.qmd)
+
+::: {.callout-note collapse="true"}
+## Standard structure of a Part I module
+
+Each module will eventually combine the economic question, formal model, computational formulation, algorithms and complexity, core courses and video lectures, seminal papers, cases and institutions, datasets, data labs, replications, implementation exercises, and research-frontier extensions.
+:::
+
+## Part I outcome
+
+At the end of Part I, an economist should be comfortable formulating problems algorithmically and collaborating with computer scientists, while a computer scientist should have a rigorous economic framework for incentives, institutions, markets, and strategic behaviour.
+
+[Continue to Module 1 — Algorithms for Economists →](01-algorithms-economists/index.qmd)

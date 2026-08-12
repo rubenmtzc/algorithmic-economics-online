@@ -1,0 +1,13 @@
+---
+title: "Data Labs"
+sidebar: projects
+toc: true
+---
+
+Short, focused data and implementation exercises linked directly to modules in Parts I and II.
+
+::: {.callout-note}
+## Status
+
+Projects will be added module by module in the next phase.
+:::

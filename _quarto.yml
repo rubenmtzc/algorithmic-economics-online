@@ -3,71 +3,169 @@ project:
   output-dir: _site
 
 website:
-  title: "Computational Economics, Causal ML and AI"
+  title: "Algorithmic Economics"
   site-url: "https://rubenmtzc.github.io/algorithmic-economics-online/"
-  description: "A research-level learning programme at the economics–computer science interface."
   repo-url: "https://github.com/rubenmtzc/algorithmic-economics-online"
-  repo-actions: [edit, issue]
+  repo-actions: [edit, source, issue]
+  reader-mode: true
   page-navigation: true
-  search: true
+  back-to-top-navigation: true
+
   navbar:
+    search: true
     left:
-      - href: index.qmd
-        text: Home
-      - href: roadmap.qmd
-        text: Roadmap
-      - href: projects/index.qmd
-        text: Projects
-      - href: references/index.qmd
-        text: References
+      - text: "Home"
+        href: index.qmd
+      - text: "Part I"
+        href: part1/index.qmd
+      - text: "Part II"
+        href: part2/index.qmd
+      - text: "Projects"
+        href: projects/index.qmd
+      - text: "Additional Resources"
+        href: resources/index.qmd
+      - text: "About"
+        href: about.qmd
     right:
       - icon: github
         href: "https://github.com/rubenmtzc/algorithmic-economics-online"
-  sidebar:
-    style: docked
-    contents:
-      - section: "Start here"
-        contents:
-          - index.qmd
-          - roadmap.qmd
-          - getting-started.qmd
-      - section: "1. Research computing"
-        contents:
-          - modules/01-computing/index.qmd
-      - section: "2. Statistical learning"
-        contents:
-          - modules/02-statistical-learning/index.qmd
-      - section: "3. Modern causal ML"
-        contents:
-          - modules/03-causal-ml/index.qmd
-      - section: "4. Deep learning"
-        contents:
-          - modules/04-deep-learning/index.qmd
-      - section: "5. Optimisation & algorithms"
-        contents:
-          - modules/05-optimisation-algorithms/index.qmd
-      - section: "6. Bandits & reinforcement learning"
-        contents:
-          - modules/06-bandits-rl/index.qmd
-      - section: "7. Algorithmic game theory"
-        contents:
-          - modules/07-algorithmic-game-theory/index.qmd
-      - section: "8. Multi-agent learning"
-        contents:
-          - modules/08-multi-agent-learning/index.qmd
-      - section: "9. Structured & relational FMs"
-        contents:
-          - modules/09-foundation-models/index.qmd
-      - section: "10. Research specialisation"
-        contents:
-          - modules/10-specialisation/index.qmd
-          - specialisations/index.qmd
-      - section: "Research work"
-        contents:
-          - projects/index.qmd
-          - references/index.qmd
+        aria-label: "GitHub repository"
 
-bibliography: references/references.bib
+  sidebar:
+    - id: part1
+      title: "Part I — Economics × Computer Science"
+      style: "docked"
+      collapse-level: 1
+      contents:
+        - text: "Part I overview"
+          href: part1/index.qmd
+        - section: "A. Computational foundations"
+          contents:
+            - text: "1. Algorithms for Economists"
+              href: part1/01-algorithms-economists/index.qmd
+            - text: "2. Graphs, Networks and Computational Structures"
+              href: part1/02-graphs-networks/index.qmd
+        - section: "B. Strategic and economic foundations"
+          contents:
+            - text: "3. Economics–Computer Science Interface"
+              href: part1/03-econ-cs-interface/index.qmd
+            - text: "4. Strategic Interaction and Multi-Agent Systems"
+              href: part1/04-strategic-interaction/index.qmd
+            - text: "5. Information Economics in Digital Environments"
+              href: part1/05-information-economics/index.qmd
+        - section: "C. Designing markets and institutions"
+          contents:
+            - text: "6. Mechanism Design"
+              href: part1/06-mechanism-design/index.qmd
+            - text: "7. Auctions and Market Design"
+              href: part1/07-auctions-market-design/index.qmd
+            - text: "8. Matching Markets"
+              href: part1/08-matching-markets/index.qmd
+            - text: "9. Computational Social Choice"
+              href: part1/09-computational-social-choice/index.qmd
+        - section: "D. Algorithmic economic systems"
+          contents:
+            - text: "10. Economic and Social Networks"
+              href: part1/10-economic-social-networks/index.qmd
+            - text: "11. Optimisation and Resource Allocation"
+              href: part1/11-optimisation-resource-allocation/index.qmd
+            - text: "12. Learning and Decision-Making under Uncertainty"
+              href: part1/12-learning-uncertainty/index.qmd
+            - text: "13. Platforms and Digital Markets"
+              href: part1/13-platforms-digital-markets/index.qmd
+            - text: "14. Online Advertising and Algorithmic Markets"
+              href: part1/14-online-advertising/index.qmd
+            - text: "15. Fairness, Privacy, Accountability and Governance"
+              href: part1/15-fairness-privacy-governance/index.qmd
+            - text: "16. Fintech, Payments, Blockchain and Digital Institutions"
+              href: part1/16-fintech-blockchain/index.qmd
+
+    - id: part2
+      title: "Part II — Computational and AI Research Toolkit"
+      style: "docked"
+      collapse-level: 1
+      contents:
+        - text: "Part II overview"
+          href: part2/index.qmd
+        - section: "A. Research computing and machine learning"
+          contents:
+            - text: "1. Research-Level Python and Computing"
+              href: part2/01-research-computing/index.qmd
+            - text: "2. Machine Learning Foundations"
+              href: part2/02-ml-foundations/index.qmd
+            - text: "3. Statistical Learning"
+              href: part2/03-statistical-learning/index.qmd
+        - section: "B. Causal and deep learning"
+          contents:
+            - text: "4. Modern Causal Machine Learning"
+              href: part2/04-causal-ml/index.qmd
+            - text: "5. Deep Learning"
+              href: part2/05-deep-learning/index.qmd
+        - section: "C. Algorithms and sequential learning"
+          contents:
+            - text: "6. Optimisation and Algorithms"
+              href: part2/06-optimisation-algorithms/index.qmd
+            - text: "7. Bandits and Reinforcement Learning"
+              href: part2/07-bandits-rl/index.qmd
+            - text: "8. Multi-Agent Learning and Reinforcement Learning"
+              href: part2/08-multi-agent-learning/index.qmd
+        - section: "D. Foundation models and research"
+          contents:
+            - text: "9. Structured and Relational Foundation Models"
+              href: part2/09-structured-foundation-models/index.qmd
+            - text: "10. Research Specialisations"
+              href: part2/10-research-specialisations/index.qmd
+
+    - id: projects
+      title: "Projects"
+      style: "docked"
+      collapse-level: 1
+      contents:
+        - text: "Projects overview"
+          href: projects/index.qmd
+        - text: "Data Labs"
+          href: projects/data-labs.qmd
+        - text: "Replication Projects"
+          href: projects/replications.qmd
+        - text: "Capstone Projects"
+          href: projects/capstones.qmd
+
+    - id: resources
+      title: "Additional Resources"
+      style: "docked"
+      collapse-level: 1
+      contents:
+        - text: "Resources overview"
+          href: resources/index.qmd
+        - section: "Foundations and enrichment"
+          contents:
+            - text: "Mathematics"
+              href: resources/mathematics.qmd
+            - text: "Economics"
+              href: resources/economics.qmd
+            - text: "Computer Science"
+              href: resources/computer-science.qmd
+            - text: "Research Methods"
+              href: resources/research-methods.qmd
+            - text: "Spanish-Language Resources"
+              href: resources/spanish-language.qmd
+        - section: "Programme support"
+          contents:
+            - text: "Datasets"
+              href: resources/datasets.qmd
+            - text: "Papers"
+              href: resources/papers.qmd
+            - text: "Cases and Institutions"
+              href: resources/cases.qmd
+            - text: "Software and Tools"
+              href: resources/software.qmd
+
+  page-footer:
+    left: "Algorithmic Economics"
+    right:
+      - icon: github
+        href: "https://github.com/rubenmtzc/algorithmic-economics-online"
+
 format:
   html:
     theme:
@@ -76,12 +174,5 @@ format:
     respect-user-color-scheme: true
     css: styles.css
     toc: true
-    toc-depth: 3
-    code-copy: true
-    code-overflow: wrap
-    link-external-newwindow: true
 
-execute:
-  freeze: auto
-
-lang: en-GB
+bibliography: references/references.bib

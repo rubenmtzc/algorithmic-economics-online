@@ -1,0 +1,13 @@
+---
+title: "Research Methods"
+sidebar: resources
+toc: true
+---
+
+Resources on mathematical writing, reproducible research, scientific computing, empirical workflow, academic writing, presentation, and research design.
+
+::: {.callout-note}
+## Status
+
+This catalogue will be populated alongside the individual modules.
+:::

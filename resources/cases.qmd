@@ -1,0 +1,13 @@
+---
+title: "Cases and Institutions"
+sidebar: resources
+toc: true
+---
+
+Institutions, platforms, markets, policies, and real-world cases integrated into the programme.
+
+::: {.callout-note}
+## Status
+
+This catalogue will be populated alongside the individual modules.
+:::

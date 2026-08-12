@@ -1,0 +1,13 @@
+---
+title: "Computer Science"
+sidebar: resources
+toc: true
+---
+
+Optional computer-science foundations and extensions: programming, data structures, algorithms, discrete mathematics, complexity, databases, software engineering, artificial intelligence, and machine learning.
+
+::: {.callout-note}
+## Status
+
+This catalogue will be populated alongside the individual modules.
+:::

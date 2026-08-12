@@ -1,0 +1,44 @@
+---
+title: "Part II — Computational and AI Research Toolkit"
+subtitle: "Methods for modern empirical, computational, and theoretical research"
+sidebar: part2
+toc: true
+---
+
+Part II develops the computational, statistical, and artificial-intelligence toolkit required for research at the economics–computer science interface.
+
+It progresses from reproducible research computing through statistical and causal learning, deep learning, optimisation, reinforcement learning, multi-agent learning, and foundation models.
+
+## A. Research computing and machine learning
+
+1. [Research-Level Python and Computing](01-research-computing/index.qmd)
+2. [Machine Learning Foundations](02-ml-foundations/index.qmd)
+3. [Statistical Learning](03-statistical-learning/index.qmd)
+
+## B. Causal and deep learning
+
+4. [Modern Causal Machine Learning](04-causal-ml/index.qmd)
+5. [Deep Learning](05-deep-learning/index.qmd)
+
+## C. Algorithms and sequential learning
+
+6. [Optimisation and Algorithms](06-optimisation-algorithms/index.qmd)
+7. [Bandits and Reinforcement Learning](07-bandits-rl/index.qmd)
+8. [Multi-Agent Learning and Reinforcement Learning](08-multi-agent-learning/index.qmd)
+
+## D. Foundation models and research
+
+9. [Structured and Relational Foundation Models](09-structured-foundation-models/index.qmd)
+10. [Research Specialisations](10-research-specialisations/index.qmd)
+
+::: {.callout-note collapse="true"}
+## Relationship with Part I
+
+Some subjects intentionally appear in both parts at different levels. Part I uses algorithms, optimisation, networks, and learning to understand economic institutions and strategic systems. Part II develops those methods at greater computational and research depth.
+:::
+
+## Part II outcome
+
+The goal is research-level fluency with the computational methods increasingly used in algorithmic economics, computational social science, market design, digital economics, and AI-mediated economic systems.
+
+[Begin Part II →](01-research-computing/index.qmd)
