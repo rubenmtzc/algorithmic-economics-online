@@ -1,75 +1,1034 @@
 ---
-title: "Module 1 — Research-Level Python and Computing"
+title: "Module 1: Research-Level Python and Computing"
+subtitle: "From scripts and notebooks to reproducible research software"
 sidebar: part2
 toc: true
 ---
 
-Python, numerical and tabular computing, SQL, Git, shell workflows, testing, packaging, and reproducible research software.
+## Why this module matters
 
-::: {.callout-note}
-## Status
+A large share of modern economic research now depends on code. The standard required for serious research is therefore higher than simply being able to make a notebook run.
 
-This page is an initial programme placeholder. Datasets, replications, papers, cases, exercises, and detailed learning resources will be added in the next phase.
+Research-level computing means being able to:
+
+- organise a project so another researcher can understand it;
+- manipulate large and messy datasets reliably;
+- work fluently with arrays, tables, relational data, and tensors;
+- use version control rather than manual file versioning;
+- test code and detect failures early;
+- separate reusable functions from exploratory analysis;
+- recreate computational environments;
+- automate repeated tasks;
+- document data sources, software dependencies, and assumptions;
+- produce results that another researcher can reproduce.
+
+The purpose of this module is to move from **using Python** to **conducting research with Python as a disciplined computational environment**.
+
+::: {.callout-important}
+## Target capability
+
+By the end of the module, you should be able to take an empirical or computational economics project and rebuild it as a reproducible research repository that another researcher can clone, inspect, run, test, and extend.
 :::
 
-## Why this matters
+## Indicative study commitment
 
-_To be developed._
+**Recommended pace:** 10 units, approximately 10 weeks.
+
+**Indicative effort:** 8 to 12 hours per unit.
+
+The module is competency-based. If you already write Python regularly, move quickly through the introductory material and spend more time on testing, packaging, data engineering, performance, and reproducibility.
+
+::: {.callout-note collapse="true"}
+## Prerequisites
+
+You do not need advanced computer science.
+
+You should have:
+
+- basic familiarity with variables, functions, conditionals, and loops;
+- elementary statistics and econometrics;
+- access to Python, VS Code or another suitable editor, and Git;
+- willingness to use the command line.
+
+If your Python knowledge is very limited, complete the first half of Harvard CS50P before attempting the more advanced units in this module.
+:::
 
 ## Learning outcomes
 
-_To be developed._
+After completing this module, you should be able to:
 
-## Core concepts
+1. **Use Python idiomatically** for research rather than treating it as a translation of another language.
+2. **Work confidently at the command line** to navigate files, run programmes, inspect output, automate tasks, and diagnose environments.
+3. **Use Git and GitHub** to maintain a meaningful research history, collaborate, branch, merge, review, and release research code.
+4. **Use NumPy effectively**, including array creation, indexing, vectorisation, broadcasting, random number generation, and numerical linear algebra.
+5. **Use pandas and Polars** for robust tabular-data workflows, including joins, reshaping, grouped operations, missing data, and larger-than-comfortable datasets.
+6. **Use SQL** to formulate relational data queries, design tables, join data, create indexes, and reason about data normalisation.
+7. **Use scikit-learn as a research-software interface**, including estimators, transformers, pipelines, train-test separation, and reproducible model workflows.
+8. **Use PyTorch at a foundational level**, including tensors, automatic differentiation, datasets, optimisation loops, and device-aware computation.
+9. **Create and manage isolated Python environments** and record dependencies so projects can be recreated.
+10. **Write automated tests**, use continuous integration, and organise code into reusable modules or packages.
+11. **Profile and benchmark code** before attempting optimisation.
+12. **Build a reproducible research repository** with documentation, raw-data provenance, deterministic execution where possible, and clear reproduction instructions.
 
-_To be developed._
+# Core learning resources
 
-## Formal and computational formulation
+The module combines several resources rather than relying on a single course.
 
-_To be developed._
+## Primary resources
 
-## Core courses and video lectures
+### 1. Harvard CS50P: Introduction to Programming with Python
 
-_To be developed._
+CS50P is the main Python-language resource. It covers functions, variables, conditionals, loops, exceptions, libraries, unit tests, file I/O, regular expressions, classes, and a final project.
 
-::: {.callout-note collapse="true"}
-## Seminal papers
+[CS50P OpenCourseWare](https://cs50.harvard.edu/python/)
 
-_To be populated._
-:::
+If you already know Python, do not necessarily complete every exercise. Prioritise:
 
-::: {.callout-note collapse="true"}
-## Additional readings and alternative resources
+- exceptions;
+- libraries;
+- unit tests;
+- file I/O;
+- regular expressions;
+- classes;
+- the final-project standards.
 
-_To be populated._
-:::
+### 2. MIT: The Missing Semester of Your CS Education
 
-## Case or institution
+Use selected lectures on:
 
-_To be populated._
+- the shell;
+- shell tools and scripting;
+- data wrangling;
+- version control with Git;
+- debugging and profiling;
+- metaprogramming, dependency management, testing, and continuous integration.
 
-## Data lab
+[The Missing Semester](https://missing.csail.mit.edu/2020/)
 
-_To be populated._
+### 3. CodeRefinery
 
-## Replication project
+CodeRefinery provides free research-software lessons with a strong focus on reproducibility, collaboration, version control, documentation, testing, and research workflows.
 
-_To be populated._
+[CodeRefinery lessons](https://coderefinery.org/lessons/)
 
-::: {.callout-note collapse="true"}
-## Dataset documentation
+### 4. The Carpentries: Intermediate Research Software Development
 
-_To be populated._
-:::
+This is particularly valuable in the second half of the module. It covers collaborative Python development, virtual environments, Git and GitHub, style, linting, testing, continuous integration, architecture, refactoring, code review, packaging, and software reuse.
 
-::: {.callout-note collapse="true"}
-## Code and implementation
-
-_To be populated._
-:::
+[Intermediate Research Software Development](https://carpentries-incubator.github.io/python-intermediate-development/)
 
 ::: {.callout-tip collapse="true"}
-## Research frontier and extension
+## UK research-software perspective
 
-_To be populated._
+The UK Software Sustainability Institute provides additional material and training around sustainable, FAIR, reusable, and reproducible research software.
+
+[Software Sustainability Institute](https://www.software.ac.uk/)
+:::
+
+# Learning path
+
+## Unit 1: The research-computing environment
+
+### Topics
+
+- terminal versus graphical interfaces;
+- file systems and paths;
+- shell commands;
+- standard input and output;
+- pipes and redirection;
+- environment variables;
+- scripting repetitive tasks;
+- Python interpreters;
+- virtual environments;
+- project directories;
+- editors and IDEs;
+- Jupyter notebooks versus Python modules.
+
+### Core resources
+
+1. [MIT Missing Semester: The Shell](https://missing.csail.mit.edu/2020/course-shell/)
+2. [Python `venv` documentation](https://docs.python.org/3/library/venv.html)
+3. [CodeRefinery lessons](https://coderefinery.org/lessons/)
+
+### Practical checkpoint
+
+From a terminal, you should be able to:
+
+```bash
+pwd
+ls
+cd
+mkdir
+cp
+mv
+rm
+python
+python -m venv .venv
+```
+
+and understand what each command changes.
+
+::: {.callout-note collapse="true"}
+## Windows users
+
+The conceptual objective is command-line literacy, not allegiance to a particular shell.
+
+PowerShell is perfectly acceptable for normal Windows research work. Git Bash is useful when following teaching material written around Unix-style commands. Later research computing may also involve Linux directly, remote servers, containers, or high-performance computing systems.
+:::
+
+### Exercise
+
+Create a new research directory entirely from the terminal. Inside it:
+
+1. create a virtual environment;
+2. create `data`, `src`, `notebooks`, `tests`, and `results` directories;
+3. create a short Python script;
+4. run it from the terminal;
+5. redirect its output into a text file;
+6. delete the environment and recreate it.
+
+The final step matters. A research environment should be **reconstructible**, not precious.
+
+## Unit 2: Python beyond scripting
+
+### Topics
+
+- functions as interfaces;
+- scope and namespaces;
+- exceptions;
+- context managers;
+- iterators and generators;
+- comprehensions;
+- type hints;
+- dataclasses where appropriate;
+- modules and imports;
+- object-oriented design only where useful;
+- reading and writing files;
+- regular expressions;
+- standard-library tools;
+- separating computation from presentation.
+
+### Primary resource
+
+[Harvard CS50P](https://cs50.harvard.edu/python/)
+
+Prioritise Weeks 3 to 9 if you already know the basics.
+
+### Reference
+
+[Official Python tutorial](https://docs.python.org/3/tutorial/)
+
+### Economics exercise
+
+Take a notebook containing a small empirical analysis and refactor it so that:
+
+```text
+notebook
+    |
+    +-- imports reusable functions
+    |
+src/
+    +-- load_data.py
+    +-- clean_data.py
+    +-- analysis.py
+    +-- tables.py
+```
+
+The notebook should orchestrate the analysis rather than contain every transformation itself.
+
+## Unit 3: Numerical computing with NumPy
+
+### Topics
+
+- `ndarray`;
+- shape, dimensions, and data types;
+- array creation;
+- indexing and slicing;
+- views versus copies;
+- vectorisation;
+- broadcasting;
+- universal functions;
+- reductions;
+- random-number generation;
+- matrix operations;
+- numerical linear algebra;
+- memory and performance.
+
+### Core resources
+
+1. [NumPy User Guide](https://numpy.org/doc/stable/user/)
+2. Harris et al. (2020), *Array programming with NumPy*. @harris2020numpy
+
+### Conceptual objective
+
+You should understand why:
+
+```python
+for i in range(n):
+    y[i] = a + b * x[i]
+```
+
+and:
+
+```python
+y = a + b * x
+```
+
+are not merely two syntactic styles. The second expression delegates the element-wise operation to the array-computing system and can have major implications for clarity and performance.
+
+## Data Lab 1: Vectorising an economic simulation
+
+Simulate a heterogeneous population of consumers with:
+
+- income;
+- a price vector;
+- preference parameters;
+- a simple demand rule.
+
+Compare:
+
+1. a pure Python loop;
+2. vectorised NumPy;
+3. an intentionally inefficient implementation.
+
+For several population sizes, measure runtime and memory use.
+
+### Questions
+
+- At what scale does implementation choice become economically relevant?
+- Does the fastest implementation remain the clearest?
+- Which parts of the code dominate runtime?
+- What is the cost of unnecessary copies?
+
+## Unit 4: Data wrangling with pandas
+
+### Topics
+
+- `Series` and `DataFrame`;
+- importing CSV, Excel, Parquet, and JSON;
+- indexing and filtering;
+- missing data;
+- variable creation;
+- grouped operations;
+- joins and merges;
+- reshaping;
+- string operations;
+- dates and time series;
+- categorical data;
+- reproducible cleaning pipelines.
+
+### Core resources
+
+1. [pandas Getting Started tutorials](https://pandas.pydata.org/docs/getting_started/intro_tutorials/)
+2. McKinney, *Python for Data Analysis*, as an optional book-length reference.
+
+### Data Lab 2: Build an international economic panel
+
+Use the **World Bank Indicators API**, which provides programmatic access to economic and social indicators without requiring an API key.
+
+[World Bank Indicators API](https://datahelpdesk.worldbank.org/knowledgebase/articles/889392)
+
+Construct a country-year panel containing at least:
+
+- GDP per capita;
+- population;
+- inflation;
+- unemployment;
+- one education or health variable.
+
+Then:
+
+1. retrieve the data programmatically;
+2. preserve the raw response;
+3. transform it into tidy panel data;
+4. join country metadata;
+5. document missing observations;
+6. generate a reproducible descriptive table;
+7. save a cleaned Parquet file.
+
+::: {.callout-important}
+## Research rule
+
+Never silently overwrite raw downloaded data with cleaned data.
+
+Treat raw inputs as immutable. Cleaning should be reproducible code that produces derived data.
+:::
+
+## Unit 5: Polars and scalable tabular workflows
+
+### Why learn a second DataFrame system?
+
+The objective is not to replace pandas. It is to understand that the DataFrame abstraction can have different execution models and performance characteristics.
+
+### Topics
+
+- Polars expressions;
+- eager versus lazy execution;
+- selections and transformations;
+- joins;
+- grouping;
+- query optimisation;
+- columnar formats;
+- Parquet;
+- benchmarking pandas and Polars;
+- memory-aware data processing.
+
+### Core resource
+
+[Polars User Guide](https://docs.pola.rs/user-guide/getting-started/)
+
+### Data Lab 3: pandas versus Polars
+
+Use a sufficiently large public dataset or construct a larger panel from repeated Eurostat downloads.
+
+Eurostat provides free programmatic access through REST APIs, including JSON-stat and SDMX interfaces.
+
+[Eurostat API documentation](https://ec.europa.eu/eurostat/web/user-guides/data-browser/api-data-access/)
+
+Compare pandas and Polars for:
+
+- loading;
+- filtering;
+- group-by aggregation;
+- joins;
+- column creation;
+- writing Parquet.
+
+Record:
+
+- elapsed time;
+- peak memory where feasible;
+- code complexity;
+- readability;
+- any differences in semantics.
+
+### Interpretation
+
+Do not conclude merely that one library is "faster".
+
+Explain:
+
+- on what data;
+- for what operation;
+- at what scale;
+- with what memory constraints;
+- using which execution mode.
+
+## Unit 6: SQL and relational data
+
+### Topics
+
+- relational databases;
+- tables and schemas;
+- primary and foreign keys;
+- `SELECT`;
+- filtering;
+- aggregation;
+- joins;
+- subqueries;
+- common table expressions;
+- indexes;
+- normalisation;
+- transactions;
+- views;
+- connecting SQL and Python.
+
+### Core resource
+
+**Harvard CS50 SQL** is the primary course.
+
+It covers querying, relationships, database design, writing data, views, optimisation, and scaling, beginning with SQLite and extending to PostgreSQL and MySQL.
+
+[CS50 SQL](https://cs50.harvard.edu/sql/)
+
+### Research exercise
+
+Take your World Bank or Eurostat panel and construct a relational database with separate tables for:
+
+```text
+country
+indicator
+observation
+source_metadata
+```
+
+Then write SQL queries answering questions such as:
+
+- Which countries experienced the largest fall in unemployment over a chosen period?
+- Which observations are missing for a particular indicator?
+- Which countries satisfy multiple economic conditions simultaneously?
+- How does query performance change after creating an appropriate index?
+
+### Main lesson
+
+A DataFrame is not a database.
+
+Learn to recognise when a relational model is the more appropriate abstraction.
+
+## Unit 7: Research workflows with scikit-learn
+
+This unit is **not the machine-learning theory module**. Module 2 and Module 3 provide that theory.
+
+Here the focus is the software interface and research workflow.
+
+### Topics
+
+- estimators;
+- transformers;
+- `fit`, `transform`, and `predict`;
+- preprocessing;
+- train-test separation;
+- pipelines;
+- column transformations;
+- reproducible random states;
+- model evaluation;
+- preventing leakage;
+- persistence and reproducibility.
+
+### Core resource
+
+[scikit-learn Getting Started](https://scikit-learn.org/stable/getting_started.html)
+
+Pedregosa et al. (2011) provides the foundational software paper. @pedregosa2011sklearn
+
+### Exercise
+
+Using one of the economic datasets constructed earlier:
+
+1. define a simple prediction task;
+2. separate training and test data;
+3. create preprocessing using transformers;
+4. combine preprocessing and a simple estimator in a `Pipeline`;
+5. reproduce the result from a fresh Python process;
+6. deliberately introduce data leakage;
+7. explain why the apparently improved result is invalid.
+
+The statistical interpretation is intentionally limited here. The main objective is **workflow correctness**.
+
+## Unit 8: PyTorch foundations
+
+Again, this is not yet the deep-learning module.
+
+The objective is to become comfortable with the computational concepts that later deep-learning and multi-agent modules will assume.
+
+### Topics
+
+- tensors;
+- tensor shapes and devices;
+- datasets and data loaders;
+- model parameters;
+- computational graphs;
+- automatic differentiation;
+- loss functions;
+- optimisation loops;
+- saving and loading model state;
+- CPU versus accelerator execution.
+
+### Core resource
+
+[PyTorch: Learn the Basics](https://docs.pytorch.org/tutorials/beginner/basics/intro.html)
+
+Read the architecture-oriented software paper selectively:
+
+Paszke et al. (2019), *PyTorch: An Imperative Style, High-Performance Deep Learning Library*. @paszke2019pytorch
+
+### Economics exercise
+
+Estimate a simple linear model twice:
+
+1. using closed-form or conventional statistical tools;
+2. by defining the loss function in PyTorch and minimising it using gradient descent.
+
+The point is not to replace OLS.
+
+The objective is to understand the computational pattern:
+
+$$
+\text{parameters}
+\rightarrow
+\text{predictions}
+\rightarrow
+\text{loss}
+\rightarrow
+\text{gradient}
+\rightarrow
+\text{parameter update}.
+$$
+
+That pattern reappears throughout modern machine learning.
+
+## Unit 9: Testing, packaging, and continuous integration
+
+### Topics
+
+- why research code needs tests;
+- assertions;
+- unit tests;
+- integration tests;
+- regression tests;
+- edge cases;
+- `pytest`;
+- test parametrisation;
+- code organisation;
+- `pyproject.toml`;
+- packaging;
+- documentation;
+- continuous integration;
+- code review;
+- releases and versioning.
+
+### Primary resources
+
+1. [The Carpentries: Intermediate Research Software Development](https://carpentries-incubator.github.io/python-intermediate-development/)
+2. [pytest Getting Started](https://docs.pytest.org/en/stable/getting-started.html)
+3. [Python Packaging User Guide](https://packaging.python.org/en/latest/tutorials/)
+4. [CodeRefinery lessons](https://coderefinery.org/lessons/)
+
+### Foundational readings
+
+Wilson et al. (2014), *Best Practices for Scientific Computing*. @wilson2014best
+
+Wilson et al. (2017), *Good enough practices in scientific computing*. @wilson2017good
+
+### Exercise: turn analysis code into tested research software
+
+Take functions created in Units 2 to 8 and add tests for:
+
+- expected outputs;
+- missing data;
+- malformed inputs;
+- empty inputs;
+- boundary cases;
+- known numerical results.
+
+A minimum target is:
+
+```text
+src/
+tests/
+pyproject.toml
+README.md
+```
+
+with:
+
+```bash
+pytest
+```
+
+passing from the repository root.
+
+### Continuous integration
+
+Configure a CI workflow so tests run automatically when code is pushed or a pull request is created.
+
+The purpose is not to learn a particular platform syntax. It is to understand the research principle:
+
+> a computational result should not depend on remembering to run the tests manually.
+
+## Unit 10: Reproducible computational research
+
+### Topics
+
+- raw versus derived data;
+- deterministic workflows;
+- random seeds;
+- dependency management;
+- environment recreation;
+- README files;
+- licences;
+- data licences;
+- code licences;
+- provenance;
+- relative paths;
+- configuration files;
+- avoiding machine-specific assumptions;
+- automated execution;
+- reproducible figures and tables;
+- research compendia;
+- archived releases;
+- replication packages.
+
+### Core resources
+
+1. [AEA Data and Code Repository](https://www.openicpsr.org/openicpsr/aea)
+2. [CodeRefinery](https://coderefinery.org/)
+3. Wilson et al. (2014). @wilson2014best
+4. Wilson et al. (2017). @wilson2017good
+
+The AEA Data and Code Repository requires deposits to include the data, annotated programme code, command files, and documentation needed to reproduce reported findings.
+
+## Repository architecture
+
+A good default structure is:
+
+```text
+research-project/
+├── README.md
+├── LICENSE
+├── pyproject.toml
+├── .gitignore
+├── data/
+│   ├── README.md
+│   ├── raw/
+│   └── derived/
+├── src/
+│   └── project_name/
+├── notebooks/
+├── tests/
+├── scripts/
+├── results/
+│   ├── figures/
+│   └── tables/
+└── docs/
+```
+
+This is a starting point, not a universal law.
+
+The important questions are:
+
+- Can another researcher find the entry point?
+- Can they identify raw inputs?
+- Can they recreate derived data?
+- Can they recreate the environment?
+- Can they rerun the analysis?
+- Can they identify which code produced each result?
+
+# Seminal and foundational papers
+
+::: {.callout-note collapse="true"}
+## Scientific Python and research software
+
+### Harris et al. (2020): NumPy
+
+*Array programming with NumPy* explains the array-programming model at the foundation of scientific Python. @harris2020numpy
+
+[Open-access article](https://www.nature.com/articles/s41586-020-2649-2)
+
+### Pedregosa et al. (2011): scikit-learn
+
+This paper documents the design goals of scikit-learn, including usability, performance, documentation, and API consistency. @pedregosa2011sklearn
+
+[Open-access article](https://www.jmlr.org/papers/v12/pedregosa11a.html)
+
+### Paszke et al. (2019): PyTorch
+
+The paper explains the design philosophy behind PyTorch's imperative, Pythonic approach and high-performance runtime. @paszke2019pytorch
+
+[Open paper](https://proceedings.neurips.cc/paper/2019/hash/bdbca288fee7f92f2bfa9f7012727740-Abstract.html)
+
+### Wilson et al. (2014): Best practices
+
+A foundational statement of good scientific-software practice, covering readability, automation, incremental changes, version control, modularity, testing, profiling, documentation, and collaboration. @wilson2014best
+
+[Open-access article](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745)
+
+### Wilson et al. (2017): Good enough practices
+
+A deliberately accessible minimum set of computational practices for researchers, particularly relevant when moving from ad hoc analysis to reproducible workflows. @wilson2017good
+
+[Open-access article](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)
+:::
+
+# Data sources for the module
+
+::: {.callout-note collapse="true"}
+## World Bank
+
+The World Bank Indicators API provides programmatic access to a large collection of development indicators and does not require authentication.
+
+[World Bank API documentation](https://datahelpdesk.worldbank.org/knowledgebase/articles/889392)
+
+**Best for:** API access, panel construction, reproducible download scripts.
+
+## Eurostat
+
+Eurostat provides free REST APIs for statistical data and metadata, including JSON-stat and SDMX interfaces.
+
+[Eurostat API](https://ec.europa.eu/eurostat/web/user-guides/data-browser/api-data-access/)
+
+**Best for:** larger European datasets, structured metadata, repeatable programmatic retrieval.
+
+## AEA Data and Code Repository
+
+The repository contains replication materials associated with AEA journal publications and related projects.
+
+[AEA Data and Code Repository](https://www.openicpsr.org/openicpsr/aea)
+
+**Best for:** learning how real research packages are organised, translating workflows, and practising replication.
+:::
+
+# Replication project: migrate a published workflow to Python
+
+A particularly useful replication target for this module is:
+
+Ankel-Peters, Fiala, and Neubauer, *Is economics self-correcting? Replications in the American Economic Review*. @ankelpeters2025
+
+The associated openICPSR replication package includes data and programme code. The published article is open access.
+
+[Replication package](https://www.openicpsr.org/openicpsr/project/198622/version/V4/view)
+
+[Open-access article](https://onlinelibrary.wiley.com/doi/full/10.1111/ecin.13222)
+
+## Objective
+
+Do **not** simply rerun the original scripts.
+
+Instead:
+
+1. read the README and understand the original directory structure;
+2. identify one table or figure that can be reproduced with openly available files;
+3. trace its dependencies from raw or intermediate data to final output;
+4. reproduce it using the original workflow where feasible;
+5. rebuild that workflow in Python;
+6. replace machine-specific paths with portable paths;
+7. separate data preparation from analysis;
+8. add tests for important transformations;
+9. create an isolated environment;
+10. record dependencies;
+11. generate the table or figure from a single documented entry point;
+12. compare your result with the published output;
+13. document discrepancies.
+
+### Deliverable
+
+A repository containing:
+
+```text
+README.md
+pyproject.toml
+src/
+tests/
+scripts/
+results/
+```
+
+plus a short replication note explaining:
+
+- what was reproduced;
+- which parts were translated;
+- where the original workflow was difficult to follow;
+- whether the result matched;
+- how the new structure improves or fails to improve reproducibility.
+
+::: {.callout-tip}
+## Why this replication fits Module 1
+
+The main research question here is not whether the article's economic conclusion is correct.
+
+The learning question is:
+
+> **Can a published computational workflow be understood, reconstructed, tested, and made reproducible by another researcher?**
+:::
+
+# Case: research software as research infrastructure
+
+Research software should be treated as part of the research method rather than as an invisible administrative by-product.
+
+The **Software Sustainability Institute** explicitly promotes the idea that better software improves research reliability, reproducibility, and reuse.
+
+[Software Sustainability Institute](https://www.software.ac.uk/about)
+
+The **CodeRefinery** training network similarly focuses on research software development, reproducibility, reusability, and openness.
+
+[CodeRefinery](https://coderefinery.org/)
+
+### Reflection
+
+Choose one of your own previous research or teaching projects and answer:
+
+- Could another researcher run it today?
+- Are the data sources recorded?
+- Are there absolute paths?
+- Are package versions recoverable?
+- Are random seeds controlled?
+- Are outputs generated by code or manually edited?
+- Could you identify which script produced each table?
+- Is any transformation performed only inside a notebook?
+- Are intermediate files reproducible?
+- Are important functions tested?
+- Is the Git history meaningful?
+
+The point is diagnostic rather than punitive. Use the answers to identify what this module should change in your normal workflow.
+
+# Module project: rebuild an economics project as reproducible software
+
+Choose a small empirical, computational, or simulation-based economics project. It may be:
+
+- one of your own previous analyses;
+- a published replication package;
+- a new analysis using World Bank or Eurostat data;
+- a computational model developed elsewhere in the programme.
+
+## Required components
+
+### 1. Data acquisition
+
+Data must be downloaded programmatically where the source permits it, or accompanied by precise acquisition instructions.
+
+### 2. Raw-data preservation
+
+Raw inputs must be separated from derived data.
+
+### 3. Data pipeline
+
+Cleaning and transformation must be implemented in code.
+
+### 4. Numerical computing
+
+At least one substantive operation should use NumPy appropriately.
+
+### 5. Tabular data
+
+Use pandas or Polars for a meaningful data-engineering task.
+
+### 6. Relational data
+
+Use SQL for at least one component where a relational representation is sensible.
+
+### 7. Reusable code
+
+Core logic should live outside notebooks.
+
+### 8. Tests
+
+Important functions and data transformations should have automated tests.
+
+### 9. Version control
+
+The repository should contain a meaningful Git history.
+
+### 10. Reproducible environment
+
+A new user should be able to create the Python environment from repository metadata.
+
+### 11. Automated output
+
+At least one table and one figure should be produced from code.
+
+### 12. Documentation
+
+The README should contain a complete reproduction path.
+
+## Suggested final command
+
+The exact automation system may differ, but the ambition is that a new researcher can ultimately run something conceptually similar to:
+
+```bash
+python scripts/run_all.py
+```
+
+and regenerate the main derived data, tables, and figures.
+
+# Coding standard for the programme
+
+From this module onwards, programme projects should normally follow these principles.
+
+## Code
+
+- use descriptive names;
+- avoid unnecessary global state;
+- prefer small functions with clear interfaces;
+- document assumptions;
+- separate I/O from transformations where practical;
+- avoid duplicated logic;
+- do not optimise before measuring;
+- test important transformations.
+
+## Data
+
+- never edit raw data manually if the edit can be represented in code;
+- preserve original identifiers where useful;
+- document exclusions and recoding;
+- store large tabular derived data in appropriate formats such as Parquet where useful;
+- record data licences and access dates.
+
+## Git
+
+- commit coherent units of work;
+- write meaningful commit messages;
+- do not commit secrets;
+- do not commit virtual environments;
+- do not commit large raw datasets unless redistribution is appropriate and intentional.
+
+## Notebooks
+
+Notebooks are useful for:
+
+- exploration;
+- exposition;
+- diagnostics;
+- visualisation;
+- communicating results.
+
+They should not become the only location in which essential reusable project logic exists.
+
+# Completion criteria
+
+You are ready for [Module 2: Machine Learning Foundations](../02-ml-foundations/index.qmd) when you can do the following without relying heavily on step-by-step instructions:
+
+- create and recreate a Python virtual environment;
+- navigate and work from a terminal;
+- explain the relationship between working files, Git commits, branches, and a remote repository;
+- write reusable Python functions and modules;
+- use NumPy vectorisation and broadcasting;
+- clean, reshape, join, and aggregate data with pandas;
+- perform comparable operations with Polars and explain why lazy execution can matter;
+- design and query a small relational database with SQL;
+- build a simple scikit-learn pipeline without data leakage;
+- use PyTorch tensors and automatic differentiation;
+- write and run `pytest` tests;
+- organise a project with `src`, `tests`, data documentation, and a README;
+- document dependencies and reproduce an environment;
+- run a complete analysis from a clean checkout;
+- distinguish "the notebook runs on my machine" from genuinely reproducible research.
+
+::: {.callout-success}
+## Final checkpoint
+
+Give your repository to another researcher **without explaining it verbally**.
+
+If they can clone it, create the environment, obtain the data, run the analysis, execute the tests, and reproduce the principal output, you have met the core objective of this module.
+
+[Continue to Module 2: Machine Learning Foundations](../02-ml-foundations/index.qmd)
+:::
+
+# Optional extensions
+
+::: {.callout-tip collapse="true"}
+## Profiling and performance
+
+Return to the Missing Semester material on debugging and profiling.
+
+Learn to distinguish:
+
+- algorithmic inefficiency;
+- Python interpreter overhead;
+- unnecessary copies;
+- inefficient I/O;
+- poor data representation;
+- library misuse.
+
+Optimise only after identifying a real bottleneck.
+
+## Packaging for reuse
+
+If a project contains reusable functionality, follow the Python Packaging User Guide and convert it into an installable package.
+
+[Python Packaging User Guide](https://packaging.python.org/en/latest/tutorials/)
+
+## Collaborative development
+
+Use the later CodeRefinery and Carpentries material on:
+
+- branches;
+- pull requests;
+- code review;
+- issues;
+- releases;
+- collaborative workflows.
+
+## Research software engineering
+
+The natural extension of this module is research software engineering: treating software architecture, maintenance, testing, documentation, sustainability, and collaboration as integral parts of scientific practice rather than optional extras.
 :::
