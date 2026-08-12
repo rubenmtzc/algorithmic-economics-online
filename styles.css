@@ -112,3 +112,54 @@ code, pre, kbd, samp {
     padding: 1.5rem;
   }
 }
+
+/* =========================================================
+   Homepage secondary cards
+   ========================================================= */
+
+.secondary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  margin: 1.75rem 0 2.5rem 0;
+}
+
+.secondary-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.6rem 1.8rem;
+  border: 1px solid rgba(127, 127, 127, 0.22);
+  border-radius: 0.85rem;
+  background: rgba(127, 127, 127, 0.05);
+}
+
+.secondary-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+.secondary-card p {
+  margin-bottom: 1.25rem;
+}
+
+.secondary-button {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid currentColor;
+  border-radius: 0.45rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.secondary-button:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 850px) {
+  .secondary-grid {
+    grid-template-columns: 1fr;
+  }
+}

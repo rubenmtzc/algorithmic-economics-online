@@ -86,19 +86,25 @@ By completing the programme, a learner should be able to:
 
 The intended final outcome is not simply completion of a sequence of courses. Learners should leave with a **research portfolio** containing implementations, data laboratories, replications, case studies, and one or more substantial research projects.
 
-:::: {.columns}
-::: {.column width="50%"}
-### [Projects](projects/index.qmd)
+::: {.secondary-grid}
 
-Data labs, replication exercises, module projects, and capstones will connect theory to implementation and evidence.
+::: {.secondary-card}
+### Projects
+
+Data labs, replication exercises, module projects, and capstones connect theory to implementation and evidence.
+
+[Explore Projects →](projects/index.qmd){.secondary-button}
 :::
 
-::: {.column width="50%"}
-### [Additional Resources](resources/index.qmd)
+::: {.secondary-card}
+### Additional Resources
 
-Optional mathematics, economics, computer science, research-methods, datasets, papers, cases, and software resources support deeper study or prerequisite revision.
+Optional mathematics, economics, computer science, research methods, datasets, papers, cases, and software for deeper study or prerequisite revision.
+
+[Explore Resources →](resources/index.qmd){.secondary-button}
 :::
-::::
+
+:::
 
 ::: {.callout-note collapse="true"}
 ## How should I use the programme?
