@@ -704,9 +704,9 @@ You are ready for [Module 2: Graphs, Networks and Computational Structures](../0
 
 - translate a verbal economic problem into inputs, outputs, and constraints;
 - write readable pseudocode;
-- explain \(O(n)\), \(O(n\log n)\), \(O(n^2)\), and exponential growth;
+- explain $O(n)$, $O(n\log n)$, $O(n^2)$, and exponential growth;
 - distinguish preprocessing cost from query cost;
-- implement and analyse binary search and at least one \(O(n\log n)\) sorting algorithm;
+- implement and analyse binary search and at least one $O(n\log n)$ sorting algorithm;
 - recognise divide-and-conquer, greedy, and dynamic-programming structures;
 - explain BFS, DFS, and shortest-path algorithms at a conceptual level;
 - explain what NP-hardness means without saying simply "the problem is difficult";
